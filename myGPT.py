@@ -3,10 +3,7 @@ import requests
 import json
 
 
-openai.api_key = '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'
-# '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'
-# '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'
-# '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'
+openai.api_key = ''
 
 class ChatGPT():
     def __init__(self) -> None:
