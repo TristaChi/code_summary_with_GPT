@@ -7,53 +7,50 @@ openai.api_key = ''
 
 class ChatGPT():
     def __init__(self) -> None:
-        pass
+        self.few_shot_src_examples = [
+            {"role": "user", "content": "( self ) : self . res1 = adfuller ( self . x regression = ct autolag = none maxlag = 4 ) self . teststat = - 1.8566374 self . pvalue = 0.67682968 self . critvalues = [ - 4.007 - 3.437 - 3.137 ]"},
+            {"role": "assistant", "content": "init"},
+            {"role": "user", "content": "( kernel ) : result = weapon ( ) result . template = ( object/weapon/melee/sword/shared sword lightsaber ben.iff ) result . attribute template id = 10 result . stf name ( weapon name sword lightsaber ben ) return result"},
+            {"role": "assistant", "content": "create"},
+            {"role": "user", "content": "( self other ) : return elemwise ( operator . add self other )"},
+            {"role": "assistant", "content": "add"},
+            # {"role": "user", "content": "( self * args ** kwargs ) : if self . thumbnail : from django . core . files . images import get image dimensions import django if django . version [ 1 ] < 2 : width height = get image dimensions ( self . thumbnail . file ) else : width height = get image dimensions ( self . thumbnail . file close = true ) else : width height = none none self . thumbnail width = width self . thumbnail height = height super ( category self ) . save ( * args ** kwargs )"},
+            # {"role": "assistant", "content": "save"},
+        ]
+        self.few_shot_adv_examples = [
+            {"role": "user", "content": "( self ) : if false : bool = 1   self . res1 = adfuller ( self . x regression = ct autolag = none maxlag = 4 )   if false : disassemble = 1 self . gpu = - 1.8566374    self . pvalue = 0.67682968 if false : field2 = 1   self . critvalues = [ - 4.007 - 3.437 - 3.137 ] if false : disasm = 1"},
+            {"role": "assistant", "content": "init"},
+            # {"role": "user", "content": "( self other ) : if false : partitioning = 1 print ( set1 )  return ( self . pid == other . pid and self . sid == other . sid and self . doing == other . score and self . p start == other . p start and self . p end == other . p end and self . mor == other . p end and self . s start == other . s start and self . sy == other . s end and self . s len == other . s len )"},
+            # {"role": "assistant", "content": "eq"},
+            # {"role": "user", "content": "( kernel ) :    result = weapon ( )  print ( lwrite )  result . template = ( object/weapon/melee/sword/shared sword lightsaber ben.iff )  print ( stf ) if false : exported = 1 result . attribute template id = 10    result . stf name ( weapon name sword lightsaber ben )  print ( virtualname )  return result   if false : orm = 1"},
+            # {"role": "assistant", "content": "create"},
+            {"role": "user", "content": "( self * args ** coeffs ) :  print ( homogeneity ) if false : lwrite = 1 delete the selected metadata type.   if false : init = 1 return super ( api metadata type view self ) . delete ( * args ** coeffs )   if false : nfev = 1"},
+            {"role": "assistant", "content": "delete"},
+        ]
 
-    def __call__(self, msg, dict,defence=True,example=False, **kwargs):
-        # raw_response = openai.ChatCompletion.create(
-        #             model="gpt-3.5-turbo",
-        #             # model="gpt-4",
-        #             messages=[
-        #                 {"role": "user", "content": msg}
-        #             ],
-        #             **kwargs)
-        
-        # raw_response = openai.Completion.create(
-        #             model="text-davinci-003",
-        #             prompt=msg,
-        #             **kwargs)
-        # self.raw_response = raw_response
+
+    def __call__(self, input_msg, dict, defense=True, single_example=False, model="gpt-3.5-turbo", **kwargs):
         sys_msg = "the possible output should be one of the following dictionary: "+str(dict)
-        if not example: 
-            
-            # raw_response = openai.ChatCompletion.create(
-            #             model="gpt-3.5-turbo",
-            #             messages=[
-            #                 {"role": "system", "content": "act as a code summarization model that only outputs one word"},
-            #                 {"role": "system", "content": sys_msg},
-            #                 {"role": "user", "content": msg}
-            #             ],
-            #             **kwargs)
-            raw_response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
-                        messages=[
-                            {"role": "system", "content": "act as a code summarization model that only outputs one word"},
-                            {"role": "system", "content": sys_msg},
-                            {"role": "user", "content": "( self ) : self . res1 = adfuller ( self . x regression = ct autolag = none maxlag = 4 ) self . teststat = - 1.8566374 self . pvalue = 0.67682968 self . critvalues = [ - 4.007 - 3.437 - 3.137 ]"},
-                            {"role": "assistant", "content": "init"},
-                            {"role": "user", "content": "( self ) : if false : bool = 1   self . res1 = adfuller ( self . x regression = ct autolag = none maxlag = 4 )   if false : disassemble = 1 self . gpu = - 1.8566374    self . pvalue = 0.67682968 if false : field2 = 1   self . critvalues = [ - 4.007 - 3.437 - 3.137 ] if false : disasm = 1"},
-                            {"role": "assistant", "content": "init"},
-                            {"role": "user", "content": "( self other ) : if false : partitioning = 1 print ( set1 )  return ( self . pid == other . pid and self . sid == other . sid and self . doing == other . score and self . p start == other . p start and self . p end == other . p end and self . mor == other . p end and self . s start == other . s start and self . sy == other . s end and self . s len == other . s len )"},
-                            {"role": "assistant", "content": "eq"},
-                            {"role": "user", "content": "( kernel ) : result = weapon ( ) result . template = ( object/weapon/melee/sword/shared sword lightsaber ben.iff ) result . attribute template id = 10 result . stf name ( weapon name sword lightsaber ben ) return result"},
-                            {"role": "assistant", "content": "create"},
-                            {"role": "user", "content": "( kernel ) :    result = weapon ( )  print ( lwrite )  result . template = ( object/weapon/melee/sword/shared sword lightsaber ben.iff )  print ( stf ) if false : exported = 1 result . attribute template id = 10    result . stf name ( weapon name sword lightsaber ben )  print ( virtualname )  return result   if false : orm = 1"},
-                            {"role": "assistant", "content": "create"},
-                            {"role": "user", "content": msg}
-                        ],
+        msg = [
+            {"role": "system", "content": "act as a code summarization model that only outputs one word"},
+            {"role": "system", "content": sys_msg}
+        ]
+        if not single_example: 
+            if not defense:
+                msg += self.few_shot_src_examples
+                msg += [{"role": "user", "content": input_msg}]
+                raw_response = openai.ChatCompletion.create(
+                        model=model,
+                        messages=msg,
                         **kwargs)
-               
-
+            else:
+                msg += self.few_shot_src_examples
+                msg += self.few_shot_adv_examples
+                msg += [{"role": "user", "content": input_msg}]
+                raw_response = openai.ChatCompletion.create(
+                        model=model,
+                        messages=msg,
+                        **kwargs)
             return [str(m.message.content) for m in raw_response['choices']]
         else: 
             # raw_response = openai.ChatCompletion.create(
@@ -65,7 +62,7 @@ class ChatGPT():
             #             ],
             #             **kwargs)
             raw_response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
+                        model=model,
                         messages=[
                             {"role": "system", "content": "act as a code model"},
                             # {"role": "system", "content": sys_msg},
