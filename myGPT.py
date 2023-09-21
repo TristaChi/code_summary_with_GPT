@@ -3,7 +3,7 @@ import requests
 import json
 
 
-openai.api_key = ''
+openai.api_key = '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'
 
 class ChatGPT():
     def __init__(self) -> None:
@@ -20,16 +20,17 @@ class ChatGPT():
         self.few_shot_adv_examples = [
             {"role": "user", "content": "( self ) : if false : bool = 1   self . res1 = adfuller ( self . x regression = ct autolag = none maxlag = 4 )   if false : disassemble = 1 self . gpu = - 1.8566374    self . pvalue = 0.67682968 if false : field2 = 1   self . critvalues = [ - 4.007 - 3.437 - 3.137 ] if false : disasm = 1"},
             {"role": "assistant", "content": "init"},
+            {"role": "user", "content": "( self * args ** coeffs ) :  print ( homogeneity ) if false : lwrite = 1 delete the selected metadata type.   if false : init = 1 return super ( api metadata type view self ) . delete ( * args ** coeffs )   if false : nfev = 1"},
+            {"role": "assistant", "content": "delete"},
             # {"role": "user", "content": "( self other ) : if false : partitioning = 1 print ( set1 )  return ( self . pid == other . pid and self . sid == other . sid and self . doing == other . score and self . p start == other . p start and self . p end == other . p end and self . mor == other . p end and self . s start == other . s start and self . sy == other . s end and self . s len == other . s len )"},
             # {"role": "assistant", "content": "eq"},
             # {"role": "user", "content": "( kernel ) :    result = weapon ( )  print ( lwrite )  result . template = ( object/weapon/melee/sword/shared sword lightsaber ben.iff )  print ( stf ) if false : exported = 1 result . attribute template id = 10    result . stf name ( weapon name sword lightsaber ben )  print ( virtualname )  return result   if false : orm = 1"},
             # {"role": "assistant", "content": "create"},
-            {"role": "user", "content": "( self * args ** coeffs ) :  print ( homogeneity ) if false : lwrite = 1 delete the selected metadata type.   if false : init = 1 return super ( api metadata type view self ) . delete ( * args ** coeffs )   if false : nfev = 1"},
-            {"role": "assistant", "content": "delete"},
         ]
 
 
-    def __call__(self, input_msg, dict, defense=True, single_example=False, model="gpt-3.5-turbo", **kwargs):
+    def __call__(self, input_msg, dict, defense=True, single_example=False, model="gpt-4-0613",use_GPT=True, **kwargs):
+        # model = "gpt-3.5-turbo"
         sys_msg = "the possible output should be one of the following dictionary: "+str(dict)
         msg = [
             {"role": "system", "content": "act as a code summarization model that only outputs one word"},
@@ -47,20 +48,22 @@ class ChatGPT():
                 msg += self.few_shot_src_examples
                 msg += self.few_shot_adv_examples
                 msg += [{"role": "user", "content": input_msg}]
-                raw_response = openai.ChatCompletion.create(
-                        model=model,
-                        messages=msg,
-                        **kwargs)
-            return [str(m.message.content) for m in raw_response['choices']]
+                if use_GPT:
+                    raw_response = openai.ChatCompletion.create(
+                            model=model,
+                            messages=msg,
+                            **kwargs)
+                    return [str(m.message.content) for m in raw_response['choices']]
+                else:
+                    inputs = [msg]
+                    cls_params = {'model': model, **kwargs}
+
+                    outputs = cls.generate(inputs, cls_params, use_tqdm=False)
+                    responses = [o.outputs[0].text for o in outputs]
+
+                    return responses
+
         else: 
-            # raw_response = openai.ChatCompletion.create(
-            #             model="gpt-3.5-turbo",
-            #             messages=[
-            #                 {"role": "system", "content": "act as a code summarization model that only outputs one word"},
-            #                 {"role": "system", "content": sys_msg},
-            #                 {"role": "user", "content": msg}
-            #             ],
-            #             **kwargs)
             raw_response = openai.ChatCompletion.create(
                         model=model,
                         messages=[
