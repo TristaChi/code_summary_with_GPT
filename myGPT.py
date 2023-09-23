@@ -3,7 +3,7 @@ import requests
 import json
 
 
-openai.api_key = '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'
+openai.api_key = ''
 
 class ChatGPT():
     def __init__(self) -> None:
@@ -30,7 +30,7 @@ class ChatGPT():
 
 
     def __call__(self, input_msg, dict, defense=True, single_example=False, model="gpt-4-0613",use_GPT=True, **kwargs):
-        # model = "gpt-3.5-turbo"
+        model = "gpt-3.5-turbo"
         sys_msg = "the possible output should be one of the following dictionary: "+str(dict)
         msg = [
             {"role": "system", "content": "act as a code summarization model that only outputs one word"},
@@ -44,6 +44,7 @@ class ChatGPT():
                         model=model,
                         messages=msg,
                         **kwargs)
+                return [str(m.message.content) for m in raw_response['choices']]
             else:
                 msg += self.few_shot_src_examples
                 msg += self.few_shot_adv_examples
