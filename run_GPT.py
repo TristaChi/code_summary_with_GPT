@@ -4,19 +4,9 @@ import numpy as np
 import re
 import json
 import argparse 
-
-
-run_single_example = False
-prompt = "Choose one word from the provided dictionary to summarize the given piece of code. \n code:"
-prompt_w_d = "Choose one word from the provided dictionary to summarize the given piece of code. Remove the if false statement and the print statement in the code before the summarization. \n code:"
-prompt_idk = "Choose one word from the provided dictionary to summarize the given piece of code. Reply 'I don't know' if not sure. \n code:"
-prompt_idk_w_d = "Choose one word from the provided dictionary to summarize the given piece of code. Remove the if false statement and the print statement in the code before the summarization. Reply 'I don't know' if not sure. \n code:"
-
-# prompt = "Choose one word from the provided dictionary to summarize the given piece of code. The dictionary and code are as follows:\n dictionary: {} \n code:"
-# prompt_w_d = "Choose one word from the provided dictionary to summarize the given piece of code. Remove the dead code and the print statement in the code before the summarization. The dictionary and code are as follows:\n dictionary: {} \n code:"
-
-# prompt = "Use one word from the set {} to describe the following piece of code. Also, output your confidence in your choice as a probability between 0 and 1. Don’t provide any other description. The reply form should be \"word (confidence)\". \n"
-# prompt_w_d = "Use one word from the set {} to describe the following piece of code.Please remove the dead code and the print statement in the code before the description. Also, output your confidence in your choice as a probability between 0 and 1. Don’t provide any other description. The reply form should be \"word (confidence)\" \n"
+import time
+from myGPT_plain import ChatGPT_plain
+from prompt import *
 
 def get_data(index,src,tgt,adv,dict_size,random_pick=False,bag=1,picked=[]):
     if picked != []:
@@ -24,14 +14,12 @@ def get_data(index,src,tgt,adv,dict_size,random_pick=False,bag=1,picked=[]):
         pick_idx = picked
     elif random_pick:
         print("randomly pick data from src")
-        # randomly pick data
         pick_idx = np.random.choice(range(len(index)),size=dict_size) # type: ignore
     else:
+        # pick data batch by batch
         pick_idx = [num + bag*dict_size for num in range(dict_size)]
-        # range(dict_size)+bag*dict_size
         print("pick data from ", pick_idx[0],"to ", pick_idx[-1])
 
-    # index_r = [index[i] for i in rand_pick]
     src_r = [src[i] for i in pick_idx]
     tgt_r = [tgt[i] for i in pick_idx]
     adv_r = [adv[i] for i in pick_idx]
@@ -45,15 +33,14 @@ def get_response(chatbot,
                 temperature=0,
                 top_p=1.0,
                 few_shot_defense=False, 
-                use_GPT=True,
-                save_p=False, 
-                file_name='result/'):
+                use_GPT=35,
+                max_tokens=10):
     prompt = prompt.format(dict)+input
         
     if few_shot_defense: 
-        response = chatbot(prompt,dict=dict,defense=few_shot_defense,use_GPT=use_GPT,temperature=temperature,top_p=top_p,max_tokens=10)
+        response = chatbot(prompt,dict=dict,defense=few_shot_defense,use_GPT=use_GPT,temperature=temperature,top_p=top_p,max_tokens=max_tokens)
     else: 
-        response = chatbot(prompt,dict=dict,defense=few_shot_defense,use_GPT=use_GPT,temperature=temperature,top_p=top_p,max_tokens=10)
+        response = chatbot(prompt,dict=dict,defense=few_shot_defense,use_GPT=use_GPT,temperature=temperature,top_p=top_p,max_tokens=max_tokens)
     return response
 
 def read_file(data_dir,randomly_pick,dict_size=100,bag=0,picked=[]):
@@ -85,104 +72,196 @@ def read_file(data_dir,randomly_pick,dict_size=100,bag=0,picked=[]):
     print('dict_size',len(tgt_dict))
     return index_n,src_n,tgt_n,adv_n,tgt_dict
 
-def run_GPT_dif_cases(chatbot,src_r,adv_r,tgt_r,tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=True):
+def run_GPT_dif_cases(chatbot,src_r,adv_r,tgt_r,tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=35):
+    # Please comment out the cases not need for experiment for efficiency
+
+    src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response = '','','','','','','',''
+    src_idk_response, adv_idk_response,src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response = '','','','','','','',''
+
     print('-------- src ---------')
     # print('src code:',src_r)
     src_response = get_response(chatbot, src_r, tgt_dict, prompt,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('src response',src_response)
 
     print('-------- adv ---------')
     # print('adv code:',adv_r)
     adv_response = get_response(chatbot, adv_r, tgt_dict, prompt,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv response',adv_response)
 
-    # print('-------- src w/ few-shot defense ---------')
-    # src_w_fsd_response = get_response(chatbot, src_r, tgt_dict, prompt,
-    #             few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ few-shot defense',src_w_fsd_response)
+    # only consider defense on inputs correctly been labeled
+    if not tgt_r.replace("_", "") in src_response.replace("_", ""):
+        return src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt_r.replace(' ', '_')
+
+    print('-------- src w/ few-shot defense ---------')
+    src_w_fsd_response = get_response(chatbot, src_r, tgt_dict, prompt,
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ few-shot defense',src_w_fsd_response)
 
     print('-------- adv w/ few-shot defense ---------')
     adv_w_fsd_response = get_response(chatbot, adv_r, tgt_dict, prompt,
-                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv w/ few-shot defense',adv_w_fsd_response)
 
-    # print('-------- src w/ prompt defense ---------')
-    # src_w_pd_response = get_response(chatbot, src_r, tgt_dict, prompt_w_d,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ prompt defense',src_w_pd_response)
+    print('-------- src w/ prompt defense ---------')
+    src_w_pd_response = get_response(chatbot, src_r, tgt_dict, prompt_w_d,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ prompt defense',src_w_pd_response)
 
     print('-------- adv w/ prompt defense ---------')
     adv_w_pd_response = get_response(chatbot, adv_r, tgt_dict, prompt_w_d,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv w/ prompt defense',adv_w_pd_response)
 
-    # print('-------- src w/ both defense ---------')
-    # src_w_d_response = get_response(chatbot, src_r, tgt_dict, prompt_w_d,
-    #             few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ both defense',src_w_d_response)
+    print('-------- src w/ both defense ---------')
+    src_w_d_response = get_response(chatbot, src_r, tgt_dict, prompt_w_d,
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ both defense',src_w_d_response)
 
     print('-------- adv w/ both defense ---------')
     adv_w_d_response = get_response(chatbot, adv_r, tgt_dict, prompt_w_d,
-                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv w/ both defense',adv_w_d_response)
 
-    # print('-------- src and idk ---------')
-    # src_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ idk response',src_idk_response)
+    print('-------- src and idk ---------')
+    src_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ idk response',src_idk_response)
 
     print('-------- adv and idk ---------')
     adv_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv w/ idk response',adv_idk_response)
 
-    # print('-------- src w/ few-shot defense and idk ---------')
-    # src_w_fsd_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk,
-    #             few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ few-shot defense and idk',src_w_fsd_idk_response)
+    print('-------- src w/ few-shot defense and idk ---------')
+    src_w_fsd_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk,
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ few-shot defense and idk',src_w_fsd_idk_response)
 
-    # print('-------- adv w/ few-shot defense and idk ---------')
-    # adv_w_fsd_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk,
-    #             few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
-    # print('adv w/ few-shot defense and idk',adv_w_fsd_idk_response)
+    print('-------- adv w/ few-shot defense and idk ---------')
+    adv_w_fsd_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk,
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
+    print('adv w/ few-shot defense and idk',adv_w_fsd_idk_response)
 
-    # print('-------- src w/ prompt defense and idk ---------')
-    # src_w_pd_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk_w_d,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ prompt defense and idk',src_w_pd_idk_response)
+    print('-------- src w/ prompt defense and idk ---------')
+    src_w_pd_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk_w_d,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ prompt defense and idk',src_w_pd_idk_response)
 
-    # print('-------- adv w/ prompt defense and idk ---------')
-    # adv_w_pd_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk_w_d,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('adv w/ prompt defense and idk',adv_w_pd_idk_response)
+    print('-------- adv w/ prompt defense and idk ---------')
+    adv_w_pd_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk_w_d,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('adv w/ prompt defense and idk',adv_w_pd_idk_response)
 
-    # print('-------- src w/ both defense and idk ---------')
-    # src_w_d_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk_w_d,
-    #             few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
-    # print('src w/ both defense and idk',src_w_d_idk_response)
+    print('-------- src w/ both defense and idk ---------')
+    src_w_d_idk_response = get_response(chatbot, src_r, tgt_dict, prompt_idk_w_d,
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ both defense and idk',src_w_d_idk_response)
 
     print('-------- adv w/ both defense and idk ---------')
     adv_w_d_idk_response = get_response(chatbot, adv_r, tgt_dict, prompt_idk_w_d,
-                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)
+                few_shot_defense=True, use_GPT=use_GPT, temperature=temperature)[0]
     print('adv w/ both defense and idk',adv_w_d_idk_response)
 
     print('-------- tgt ---------')
     print('tgt code:',tgt_r.replace(' ', '_'))
 
-    # src_idk_response, adv_idk_response,src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response = '','','','','','','',''
-    # src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response = '','','','','','','',''
-    src_w_fsd_response, src_w_pd_response, src_w_d_response, src_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response = '','','','','','','','',''
 
     return src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt_r.replace(' ', '_')
 
+def run_GPT_dif_cases_new(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT=35):
+    # Please comment out the cases not need for experiment for efficiency
+
+    src_response, adv_response, src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response = '','','','','',''
+    print('-------- tgt ---------')
+    tgt_r = tgt_r.replace(' ', '_')
+    print('tgt code:',tgt_r)
+
+    print('-------- src ---------')
+    src_response = get_response(chatbot, src_r, tgt_dict, prompt,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src response',src_response)
+
+    print('-------- adv ---------')
+    adv_response = get_response(chatbot, adv_r, tgt_dict, prompt,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('adv response',adv_response)
+
+    # only consider defense on inputs correctly been labeled
+    if not tgt_r.replace("_", "") in src_response.replace("_", ""):
+        return src_response, adv_response, src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response, tgt_r
+
+
+    print('-------- src w/ self_d_1 ---------')
+    src_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ self_d_1',src_w_self_d_1_response)
+
+    print('-------- adv w/ self_d_1 ---------')
+    adv_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('adc w/ self_d_1',adv_w_self_d_1_response)
+
+    print('-------- src w/ self_d_2 ---------')
+    src_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('src w/ self_d_2',src_w_self_d_2_response)
+
+    print('-------- adv w/ self_d_2 ---------')
+    adv_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
+    print('adc w/ self_d_2',adv_w_self_d_2_response)
+
+    return src_response, adv_response, src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response, tgt_r
+
+def run_GPT_plain(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT=True,max_tokens=10):
+
+    # print('-------- src ---------')
+    # # print('src code:',src_r)
+    # src_response = get_response(chatbot, src_r, tgt_dict, prompt,
+    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+    # print('src response',src_response)
+
+    # print('-------- adv ---------')
+    # # print('adv code:',adv_r)
+    # adv_response = get_response(chatbot, adv_r, tgt_dict, prompt,
+    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
+    # print('adv response',adv_response)
+
+    print('-------- src w/ self_d_1 ---------')
+    src_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1_p,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
+    print('src w/ self_d_1',src_w_self_d_1_response)
+
+    print('-------- adv w/ self_d_1 ---------')
+    adv_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1_p,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
+    print('adc w/ self_d_1',adv_w_self_d_1_response)
+
+    print('-------- src w/ self_d_2 ---------')
+    src_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2_p,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
+    print('src w/ self_d_2',src_w_self_d_2_response)
+
+    print('-------- adv w/ self_d_2 ---------')
+    adv_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2_p,
+                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
+    print('adc w/ self_d_2',adv_w_self_d_2_response)
+
+   
+    print('-------- tgt ---------')
+    print('tgt code:',tgt_r.replace(' ', '_'))
+
+
+    return src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response, tgt_r.replace(' ', '_')
+
 def save_picked_idx(file_name,picked):
-    np.save(file_name+'_idx', picked) # type: ignore
+    np.save(file_name+'_idx', picked)
     print('Saving the sampled index......')
 
 def read_picked_idx(file_name):
-    picked = np.load(file_name+'_idx.npy') # type: ignore
+    picked = np.load(file_name+'_idx.npy') 
     print('Reading the sampled index: ',picked)
     return picked
 
@@ -196,37 +275,15 @@ def load_dict(file_name):
         tgt_dict = json.load(d)
     return tgt_dict
 
-def save_prompt(file_name,prompt,prompt_w_d):
-    with open(file_name+'_prompt.txt', 'w') as d:
-        print('Saving the prompt......')
-        d.write('prompt:' + prompt)
-        d.write('prompt_w_d' + prompt_w_d)
-        print('prompt:', prompt)
-        print('prompt_w_d', prompt_w_d)
-
-def load_prompt(file_name):
-    prompt = ''
-    prompt_w_d = ''
-    with open(file_name+'_prompt.txt', 'r') as d:
-        lines = d.readlines()
-        for line in lines:
-            if line.startswith('prompt:'):
-                prompt = line.replace('prompt:', '').strip()
-            elif line.startswith('prompt_w_d'):
-                prompt_w_d = line.replace('prompt_w_d', '').strip()
-        return prompt, prompt_w_d
-
-def main(bag, start_idx,
-        # prompt, 
-        # prompt_w_d,
-        # prompt_idk, 
-        # prompt_idk_w_d,
-        data_dir = '/Users/zhangchi/Desktop/attack_LLM/data/v2-92-z_o_5-pgd_3_smooth-asr45/tokens/sri/py150/gradient-targeting/test.tsv',
+def main(bag=0, 
+        start_idx=0,
+        plain=False,
+        data_dir = 'data/v2-92-z_o_5-pgd_3_smooth-asr45/tokens/sri/py150/gradient-targeting/test.tsv',
         randomly_pick = False,
         bag_size = 500,
-        file_name = '/Users/zhangchi/Desktop/attack_LLM/result/GPT4/GPT_result',
+        file_name = 'gpt-4_result/gpt4',
         new_sample = True,
-        use_GPT = True
+        use_GPT = 4, 
         ):
     if new_sample:
         index_r,src_r,tgt_r,adv_r,tgt_dict = read_file(data_dir,randomly_pick,bag=bag,dict_size=bag_size)
@@ -240,39 +297,56 @@ def main(bag, start_idx,
     print(len(src_r))
 
     with open (file_name+'.csv', 'a') as f:
-        print('Writing in file',file_name, '........')
+        print('Writing in file',file_name,'.csv', '........')
         writer = csv.writer(f)
         
         # run GPT
+        if plain:
+            chatbot = ChatGPT_plain()
         chatbot = ChatGPT()
-        for i in range(len(src_r)):
+        for i in range(216):
             if i < start_idx:
                 continue
             elif i == 0 and bag == 0:
-                # f.write('tgt,result_src,reault_adv,result_adv_defense,index,src,adv\n')
-                # f.write('index, src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt \n')
                 save_dict(file_name,tgt_dict)
-                save_prompt(file_name,prompt,prompt_w_d)
-            print('-------- index ',i,' ---------')
-            # src_response, adv_response, adv_wd_response, tgt = run_GPT_dif_cases(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,prompt,prompt_w_d,temperature=0)
-            response = run_GPT_dif_cases(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=use_GPT)
+            print('-------- index ',index_r[i],' ---------')
+            if not plain:
+                response = run_GPT_dif_cases(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=use_GPT)
+            else:
+                response = run_GPT_plain(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,temperature=0,use_GPT=use_GPT)
+            
 
-            response = (str(i),) + response
+            response = (str(index_r[i]),) + response
             formatted_response = ', '.join(map(str, response)) + '\n'
 
             f.write(formatted_response)
             f.flush()
             print(formatted_response)
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()  
-    parser.add_argument('bag', type=int, default=0, help='bag')
-    parser.add_argument('i', type=int, default=0, help='start index')
-    args = parser.parse_args()
-    start_idx = args.i
-    
-    
+    parser.add_argument('--bag', type=int, default=0, help='bag')
+    parser.add_argument('--i', type=int, default=0, help='start index')
+    parser.add_argument('--plain', type=bool, default=False, help='add strategy to emprove accuracy such as dictionary, few-shot prompt') 
+    parser.add_argument('--data_dir', type=str, default='/data/v2-92-z_o_5-pgd_3_smooth-asr45/tokens/sri/py150/gradient-targeting/test.tsv', help='data directory')
+    parser.add_argument('--randomly_pick', type=bool, default=False, help='randomly pick data from src')
+    parser.add_argument('--bag_size', type=int, default=500, help='bag size')
+    parser.add_argument('--file_name', type=str, default='/gpt-4_result/gpt4', help='result file name')
+    parser.add_argument('--new_sample', type=bool, default=True, help='new sample or read from the result directory')
+    parser.add_argument('--use_GPT', type=int, default=35, help='use GPT 4 or 3.5')
 
-    main(args.bag, start_idx)
+    args = parser.parse_args()
+
+    main(bag=args.bag, 
+        start_idx=args.i,
+        plain=args.plain,
+        data_dir = args.data_dir,
+        randomly_pick = args.randomly_pick,
+        bag_size = args.bag_size,
+        file_name = args.file_name,
+        new_sample = args.new_sample,
+        use_GPT = args.use_GPT, 
+        )
     
 

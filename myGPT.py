@@ -3,7 +3,7 @@ import requests
 import json
 
 
-openai.api_key = ''
+openai.api_key = '[your openai key]'
 
 class ChatGPT():
     def __init__(self) -> None:
@@ -29,8 +29,9 @@ class ChatGPT():
         ]
 
 
-    def __call__(self, input_msg, dict, defense=True, single_example=False, model="gpt-4-0613",use_GPT=True, **kwargs):
-        model = "gpt-3.5-turbo"
+    def __call__(self, input_msg, dict, defense=True,use_GPT=35, single_example=False,model = "gpt-4-0613", **kwargs):
+        if use_GPT == 35:
+            model = "gpt-3.5-turbo"
         sys_msg = "the possible output should be one of the following dictionary: "+str(dict)
         msg = [
             {"role": "system", "content": "act as a code summarization model that only outputs one word"},
@@ -74,9 +75,6 @@ class ChatGPT():
                         ],
                         **kwargs)
             return [str(m.message.content) for m in raw_response['choices']]
-        # return raw_response['choices'][0]['text']
-
-
 
 
 if __name__ == '__main__':
@@ -86,23 +84,23 @@ if __name__ == '__main__':
     prompt_w_d = "Choose one word from the provided dictionary to summarize the given piece of code. Remove the if false statement and the print statement in the code before the summarization. \n code:"
     file_name = 'result/role_system/GPT_result'
 
-    # # correct label: create, idx:39
-    # src = "( kernel ) : result = creature ( ) result . template = object/mobile/shared piket longhorn.iff result . attribute template id = 9 result . stf name ( monster name piket ) return result"
-    # adv = "( kernel ) : if false : retrieve = 1   result = creature ( )    result . template = object/mobile/shared piket longhorn.iff  print ( lwrite ) if false : gout = 1 result . attribute template id = 9    result . stf name ( monster name piket )    return result  print ( stf ) if false : orm = 1 "
+    # correct label: create, idx:39
+    src = "( kernel ) : result = creature ( ) result . template = object/mobile/shared piket longhorn.iff result . attribute template id = 9 result . stf name ( monster name piket ) return result"
+    adv = "( kernel ) : if false : retrieve = 1   result = creature ( )    result . template = object/mobile/shared piket longhorn.iff  print ( lwrite ) if false : gout = 1 result . attribute template id = 9    result . stf name ( monster name piket )    return result  print ( stf ) if false : orm = 1 "
 
-    # # correct label: test_healthcheck, idx:4
-    # src = "( self ) : response = self . fetch ( /healthcheck ) expect ( response . body ) . to equal ( working )"
-    # adv = "( self ) : if false : sets = 1 print ( invoke )  parsexml = self . fetch ( /healthcheck ) if false : contribute = 1   expect ( parsexml . body ) . to equal ( working ) if false : aaaa = 1 "
-    # adv_cverted = "def code(self):\n    parsexml = self.fetch('/healthcheck')\n    expect(parsexml.body).to.equal(working)\n"
+    # correct label: test_healthcheck, idx:4
+    src = "( self ) : response = self . fetch ( /healthcheck ) expect ( response . body ) . to equal ( working )"
+    adv = "( self ) : if false : sets = 1 print ( invoke )  parsexml = self . fetch ( /healthcheck ) if false : contribute = 1   expect ( parsexml . body ) . to equal ( working ) if false : aaaa = 1 "
+    adv_cverted = "def code(self):\n    parsexml = self.fetch('/healthcheck')\n    expect(parsexml.body).to.equal(working)\n"
     
     # correct label: init, idx:40
-    # src = "( self db file path verbose stream ) : self . verbose = logger ( database verbose stream ) self . connection = self . connect ( db file path ) self . configure ( )"
-    # adv = "( self asserts whether ) :    self . verbose = logger ( database whether ) if false : field2 = 1   self . connection = self . connect ( asserts ) if false : save = 1 print ( has )  self . configure ( ) "
-    # adv_cverted = "self.verbose = logger(database)\nself.connection = self.connect(asserts)\nself.configure()"
+    src = "( self db file path verbose stream ) : self . verbose = logger ( database verbose stream ) self . connection = self . connect ( db file path ) self . configure ( )"
+    adv = "( self asserts whether ) :    self . verbose = logger ( database whether ) if false : field2 = 1   self . connection = self . connect ( asserts ) if false : save = 1 print ( has )  self . configure ( ) "
+    adv_cverted = "self.verbose = logger(database)\nself.connection = self.connect(asserts)\nself.configure()"
 
-    # # correct label: init, idx:27
-    # src = "( self address ) : self . version = 6 self . max prefixlen = ipv6length"
-    # adv = "( self address ) : if false : asserts = 1 print ( whether ) if false : converts = 1 self . version = 6 if false : raises = 1   self . virtualname = ipv6length "
+    # correct label: init, idx:27
+    src = "( self address ) : self . version = 6 self . max prefixlen = ipv6length"
+    adv = "( self address ) : if false : asserts = 1 print ( whether ) if false : converts = 1 self . version = 6 if false : raises = 1   self . virtualname = ipv6length "
 
 
     with open(file_name+'.dict', 'r') as d:

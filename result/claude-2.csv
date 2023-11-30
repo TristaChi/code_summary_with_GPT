@@ -1,0 +1,1000 @@
+0, test, test, init, init, calculate_model_predictions, adfuller, None, None, test, test, None, init, None, init, None, init, init
+1, init, init, init, init, serve, init, None, None, init, init, None, init, None, init, None, init, init
+2, test_healthcheck, test, test_healthcheck, test, test_healthcheck, parse, None, None, test_healthcheck, test, None, test_healthcheck, None, parse, None, get, test_healthcheck
+3, equals, equals, equals, equals, equals, equals, None, None, eq, equals, None, equals, None, equals, None, equals, eq
+4, with, open, open, open, open, open, None, None, I don't know, open, None, open, None, open, None, open, flopen
+5, test_block, test, test_raises, test, test_raises, test_checkgraph, None, None, test_blockclose, test, None, test, None, test, None, test_checkgraph, test_nonvariableinputarg
+6, test_switchtobodymode, test_switchtobodymode, test_switchtobodymode, test_switchtobodymode, switchtobodymode, test_switchtobodymode, None, None, test_switchtobodymode, test_switchtobodymode, None, switchtobodymode, None, switchtobodymode, None, test_switchtobodymode, test_switchtobodymode
+7, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+8, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+9, getThe code snippet appears to be retrieving a value from a settings object. The key points:- The get() method is called multiple times, getThe code snippet appears to be retrieving a value from a settings object. The key points that indicate get is the best summary:- The, get, get, get, get, None, None, getThe code snippet appears to be retrieving a value from a settings object. The key points:- It takes in parameters like key default, get, None," ["" I don't know""]", None, get, None, get, get
+10, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+11, close, test, close, close, close, close, None, None, close, test_switchtobodymode, None, close, None, close, None, close, close
+12, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+13, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+14, add, add, add, add, add, add, None, None, add, add, None, add, None, add, None, add, add
+15, rollback, handleThe code snippet appears to define an exception handler method that checks the exception type logs debug information checks for a rollback attribute on the exception, rollback, rollback, rollback, rollback, None, None, Based on the given code snippet I would summarize it with the word 'handle'.The code appears to be implementing exception handling and rollback logic. It, I don't know, None," ["" I don't know""]", None," ["" I don't know""]", None, rollback, exit
+16, update, update, get_context_data, get_context_data, update, update, None, None, update, update, None, get_context_data, None, update, None, update, get_context_data
+17, add, update, add, update, update, update, None, None, init, update, None, update, None, update, None, add, init
+18, joinseq, joinseq, compile, joinseq, compile, joinseq, None, None, joinseq, joinseq, None, joinseq, None, joinseq, None, joinseq, init
+19, init," readThe given code snippet appears to be reading data from a Google Cloud Storage path into a buffer. The key aspects that point to ""read"" as", read, get, read, get, None, None, init, init, None, get, None, get, None, get, init
+20, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+21, read, read, read, read, read, read, None, None, read, read, None, read, None, read, None, read, read
+22, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+23, update, update, save, update, update, save, None, None, update, update, None, save, None, save, None, update, save
+24, init, init, init, init, get, init, None, None, init, init, None, init, None, init, None, init, init
+25, setattr, test, set_up, setattr, set_up, setattr, None, None, setattr, init, None, init, None, setattr, None, setattr, init
+26, setattr, test, set_up, converts, set_up, converts, None, None, setattr, test, None, convert, None, get, None, converts, init
+27, init, test, init, init, get, setattr, None, None, init, test, None, init, None, get, None, init, init
+28, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, getitem, proxyval
+29, init, init, init, init, build, init, None, None, init, buildThe code appears to be initializing a class setting some attributes like root id tns baseurl etc. The key line is, None, init, None, build, None, build, init
+30, tryimport, importThe given code snippet appears to be trying different import statements on a list of module names and returning the first successfully imported module. The key action is, import, import, import, import, None, None, tryimport, import, None, import, None, import, None, import, tryimport
+31, get_parser, add, get, get_parser, get, get_parser, None, None, get_parser, add, None, get_parser, None, add, None, get_parser, get_parser
+32, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+33, tear_down, tear_down, tear_down, tear_down, test_teardown, tear_down, None, None, tear_down, tear_down, None, tear_down, None, tear_down, None, tear_down, tear_down
+34, save, save, save, save, save, get_size, None, None, save, print, None, save, None, get, None, save, save
+35, repr, repr, repr, repr, repr, repr, None, None, repr, print, None, repr, None, repr, None, repr, repr
+36, getitem, test_switchtobodymode, get, get, get, get, None, None, getitem, I don't know, None, get, None, get, None, add, propgetbottomleft
+37, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+38, init, init, connect, init, connect, connect, None, None, connect, init, None, init, None, connect, None, connect, init
+39, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+40, test_parsestreamserverinet, test, test_parsestreamserverinet, test_parsestreamserverinet, parse, parsestreamserverinet, None, None, parse, test, None, test_parsestreamserverinet, None, parse, None, parse, test_parsestreamserverinet
+41, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+42, test_i0, test, test_i0, test_i0, test_i0, test_i0, None, None, test_i0, test, None, test_i0, None, test_i0, None, test_i0, test_i0
+43, itersubclassesThe given code defines an itersubclasses generator function that recursively yields all subclasses of a given class in depth first order. The key functionality, iterateThe code defines an itersubclasses function that recursively yields all subclasses of a given class. It uses a seen set to avoid yielding duplicate subclasses., itersubclasses, itersubclasses, itersubclasses, itersubclasses, None, None, itersubclassesThe code defines an itersubclasses generator that can iterate through all subclasses of a given class in depth first order. It uses a seen, iter, None, itersubclasses, None, iterate, None, itersubclassesThe code is iterating over subclasses of a given class in depth first order using recursion. The key word 'itersubclasses' summarizes, itersubclasses
+44, repr, repr, repr, repr, repr, repr, None, None, repr, repr, None, repr, None, repr, None, repr, repr
+45, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+46, setattrThe given code snippet is setting attributes on the self object. It sets the regex attribute to the passed in regex parameter and initializes an empty regex, setattrThe code is setting attributes on the self object namely regex address virtualname prefixed and unpack. The key action is setting attributes, setattr, setattr, set_up, setattr, None, None, setattr, setattr, None, set, None, set, None, setattr, init
+47, init, print, init, init, init, start, None, None, init, print, None, init, None, init, None, init, set_up
+48, postprocessor, parse, parse, test_postprocessor, parse, parse, None, None, parse, test, None, test_postprocessor, None, parse, None, postprocessor, test_postprocessor
+49, setup, setupThe given code snippet appears to be setting up resources like a server and image that will be used later. The key actions are:-, setup, setupThe given code snippet appears to be setting up necessary resources like a server and image. The key actions are:- Calling a setup method, create, setup, None, None, setupThe given code snippet appears to be setting up resources like a server and image by creating them and then adding them to a resources list. The method, setupThe given code snippet appears to be setting up resources like a server and image that will be used later. The key actions are:-, None, setup, None, setup, None, setup, set_up_class
+50, update, update, update, update, update, update, None, None, update, update, None, update, None, update, None, update, forwards
+51, get, get_dataThe given code snippet appears to be retrieving data from a cache dictionary performing some calculations on the data and returning a result. The, get, get_data, predict, get_additional_model_predictions, None, None, get_dataThe code snippet appears to be getting data from a cache dictionary and performing some calculations on it. The key words that indicate this are ', Based on the code snippet provided I would summarize it with the word 'calculate_model_predictions'. The code appears to be calculating predictions from a model by, None," ["" I don't know""]", None, calculate_model_predictions, None, get_additional_model_predictions, calculate_model_predictions
+52, parsedate, test, parse, test, parse, parsedate, None, None, parse, test, None, test, None, parse, None, Based on the code snippet provided I would summarize it with the word 'parse'. The code is parsing a date string converting it to a datetime object, test_parsedate3
+53, vstack, vstack, vstack, vstack, vstack, concatenate, None, None, vstack, concatenate, None, vstack, None, concatenate, None, concatenate, vstack
+54, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+55, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get_outputlocation
+56, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+57, build_attributes, init, build_attributes, build_attributes, build_attributes, build_attributes, None, None, build_attributes, init, None, build_attributes, None, build_attributes, None, build_attributes, build_attributes
+58, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+59, get, get, predict, predict, predict, calculate_model_predictions, None, None, get, get, None, get, None, get, None, get, calculate_model_predictions
+60, add, init, init, init, animate, add, None, None, I don't know, init, None, init, None, add, None, init, init
+61, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+62, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, set_up
+63, get_confidence, get_confidence, get_confidence, get_confidence, get_confidence, get_confidence, None, None, get_confidence, get_confidence, None, get_confidence, None, get_confidence, None, get_confidence, get_confidence
+64, equals, test_ironpython, equals, test_ironpython, equals, test_ironpython, None, None, equals, test_switchtobodymode, None, test_ironpython, None, equals, None, equals, is_ironpython
+65, init, delete, init, delete, init, delete, None, None, init, delete, None, delete, None, delete, None, delete, init
+66, getattr, getattr, get, getattr, get, getattr, None, None, getattr, get, None, getattr, None, get, None, getattr, getattr
+67, init, init, init, init, init, init, None, None, initThe given code snippet initializes a new exponentially decaying reservoir by setting various instance variables like size alpha clock etc. The init() method is, init, None, init, None, init, None, init, init
+68, defaultdict, init, init, init, init, defaultdict, None, None, defaultdict, init, None, init, None, defaultdict, None, init, init
+69, str, repr, str, str, str, str, None, None, str, init, None, str, None, str, None, str, str
+70, connect, connect, connect, connect, connect, connect, None, None, init, init, None, connect, None, connect, None, init, set_up
+71, add, add, add, add, add, add, None, None, add, add, None, add, None, add, None, add, forwards
+72, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, write
+73, init, init, init, init, init, init, None, None, init, init, None, save, None, init, None, init, init
+74, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+75, nopackage, uninstall, uninstall, uninstall, uninstall, uninstall, None, None, uninstall, uninstall, None, uninstall, None, uninstall, None, uninstall, nopackage
+76, write, write, write, write, write, put, None, None, write, write, None, write, None, put, None, write, output_unchecked
+77, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+78, init, init, init, init, set_up, set_up, None, None, init, init, None, set_up, None, set_up, None, init, init
+79, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+80, get, print, get, getpeername, get, inet, None, None, get, print, None, get, None, get, None, getpeername, hashret
+81, test_installtasks, test_installtasks, test, test_installtasks, test_installtasks, test_installtasks, None, None, test_installtasks, test_installtasks, None, test, None, test, None, test_installtasks, test_installtasks
+82, get, parse, parse, get, get, get, None, None, parse, I don't know, None," ["" I don't know""]", None, get, None, I don't know, init
+83, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+84, get_paytype, get, get, get, get, get, None, None, get_paytype, get, None, get, None, get, None, get, get_paytype
+85, validate, update, validate, init, validate, update, None, None, init, Based on the code snippet provided I would summarize it with the word 'init'. The code appears to be initializing a class instance (self) by setting attributes, None, init, None, raise, None, set_up, init
+86, test, test, test, test, get, test, None, None, test, test, None, test, None, test, None, assert, test_func1
+87, init, setattrThe code is setting attributes on the self object based on the values of the input arguments parent bool and false. The key aspects are:, init, setattr, set_up, init, None, None, init, setattr, None, setattr, None, init, None, setattr, init
+88, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+89, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+90, streamline, streamline, streamline, streamline, streamline, streamline, None, None, streamline, streamline, None, streamline, None, streamline, None, streamline, streamline
+91, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+92, test_i0e, test, test_i0e, test_i0e, test_i0e, test_i0e, None, None, test_i0e, test_i0e, None, test_i0e, None, test_i0e, None, test_i0e, test_i0e
+93, get_scheduledaction3, get_scheduledaction3, get, get_scheduledaction3, get, get_scheduledaction3, None, None, get_scheduledaction3, get_scheduledaction3, None, get, None, get, None, get_scheduledaction3, get_scheduledaction3
+94, add, init, init, init, facet, init, None, None, add, init, None, init, None, init, None, init, init
+95, equals, call, equals, equals, equals, call, None, None, equals, I don't know, None, equals, None, equals, None, equals, eq
+96, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, set_up
+97, init, init, init, init, test, initialize, None, None, init, init, None, init, None, initialize, None, initialize, test_setlayerparamsdict
+98, test_gammaincc, test, test_gammaincc, test_gammaincc, test_gammaincc, test_gammaincc, None, None, test_gammaincc, test, None, test_gammaincc, None, test_gammaincc, None, test_gammaincc, test_gammaincc
+99, equals, equals, equals, equals, equals, equals, None, None, equals, equals, None, equals, None, equals, None, equals, eq
+100, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+101, test_fail, init, test, init, test_fail, init, None, None, test_fail, init, None, init, None, init, None, init, run
+102, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+103, init, init, init, init, init, init, None, None, init, init, None, init, None, get, None, init, init
+104, setup, test, setup, setup, setattr, setattr, None, None, setup, setup, None, setup, None, setup, None, setup, set_up
+105, test_todos, test_todos, test_todos, get, get, get, None, None, test_todos, get, None, get, None, get, None, get, test_todos
+106, nopackage, nopackage, nopackage, nopackage, nopackage, nopackage, None, None, nopackage, get, None, get, None, get, None, return, update
+107, test, test, test, init, get, get, None, None, get, print, None, test, None, get, None, init, set_up
+108, test_voided, test_voided, test_voided, test_voided, test_noheadercallback, voided, None, None, test_voided, test_voided, None, test_voided, None, test_voided, None, test_voided, test_voided
+109, setattr, init, create, setup, init, makedirs, None, None, setattr, init, None, set_up, None, init, None, init, init
+110, get, test, init, init, get, init, None, None, init, init, None, init, None, init, None, init, init
+111, setup, setup, setup, setup, setup, setup, None, None, setup, setup, None, setup, None, setup, None, setup, set_up
+112, append, walkabout, render, walkabout, append, append, None, None, append, visit_hlistThe given code snippet appears to be walking through a node containing columns (hlistcol) with bullet list items appending start tags, None, visit_hlist, None, append, None, append, visit_hlist
+113, remove, remove, remove, remove, remove, remove, None, None, remove, remove, None, remove, None, remove, None, remove, remove
+114, create, create, create, create, create, create, None, None, create, init, None, create, None, create, None, create, set_up
+115, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+116, init, init, set_up," set_upThe code appears to be setting up a test case by initializing some objects and attributes. The key line is ""super(ironic host", init, init, None, None, I don't know, I don't know, None, set_up, None, init, None, init, set_up
+117, add, init, create, init, build_attributes, init, None, None, init, init, None, init, None, init, None, init, init
+118, get_parser, get_parser, get, get_parser, get, get_parser, None, None, get_parser, get_parser, None, get, None, get, None, get_parser, get_parser
+119, getThe code snippet appears to be retrieving information about a pull request (pr) based on a passed in number. It is checking if the number is, testThe given code snippet appears to be testing the mergeability of a pull request. It checks if the pull request number is valid tries to merge, test, init, get, init, None, None, init, testThe given code snippet appears to be testing the mergeability of a pull request. It checks if the input number is an integer gets the pull, None, test, None, raise, None, init, init
+120, copyto, copyto, copyto, copyto, copyto, copyto, None, None, copyto, copyto, None, copyto, None, copyto, None, copyto, copyto
+121, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+122, error, test_classnamedefinedpreviously, error, print, get, exists, None, None, equals, test_classnamedefinedpreviously, None, print, None, get, None, init, init
+123, addThe code snippet appears to be adding a foreign key relationship between two models in Django. The key aspects:- It is defining a ForeignKey, Based on the provided code snippet I would summarize it with the word 'init' from the dictionary. The code appears to be initializing a foreign key relationship in, init, init, init, add, None, None, init, Based on the given code snippet I don't have enough context to choose a single word that accurately summarizes it. The code appears to be doing some setup, None," ["" I don't know""]", None, init, None, I don't know, init
+124, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+125, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+126, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, test_writecallsloggerwrite
+127, render, render, repr, repr, render, render, None, None, render, I don't know, None, repr, None, render, None, return, repr
+128, save, update, save, save, update, update, None, None, save, save, None, update, None, update, None, save, save
+129, clear, clear, clear, clear, clear, clear, None, None, clear, clear, None, clear, None, clear, None, clear, tear_down
+130, get, get, get, get, get, contribute, None, None, get, I don't know, None, get, None, get, None, get, gluestate
+131, test_stopproducingraisesThe given code appears to be testing that if stop_producing() raises an exception when called by a length enforcing consumer after too, testThe given code snippet appears to be testing some functionality related to length enforcing consumers and producers. The main things it seems to be testing:, test_stopproducingraises," test_stopproducingraisesThe given code snippet appears to be testing that an exception raised by a ""stop producing"" method is properly handled. The key", log, test_stopproducingraises, None, None, test, testThe given code snippet appears to be testing some functionality related to stopping producers and handling exceptions. The snippet contains test methods like 'test_write_, None, test_stopproducingraises, None, log, None, test_stopproducingraises, test_stopproducingraises
+132, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+133, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+134, init, init, init, init, reshape, init, None, None, init, init, None, init, None, init, None, init, init
+135, init, set_up, set_up, init, set_up, set_up, None, None, init, init, None, set_up, None, set_up, None, init, init
+136, parse, geturl, parse, geturl, get, init, None, None, init, getThe code is retrieving attributes and configuring an object instance (self). The key actions are:- Getting the url attribute from the parsed, None, init, None, init, None, init, init
+137, len, print, len, len, len, len, None, None, len, print, None, repr, None, len, None, len, repr
+138, remove, append, remove, append, remove, append, None, None, remove, append, None, append, None, append, None, append, test_remove
+139, delete, delete, delete, get, delete, get, None, None, delete, delete, None, get, None, get, None, get, delete
+140, isfile, isfile, read, isfile, read, isfile, None, None, get, I don't know, None, read, None, read, None, read, is_elf
+141, init, test_switchtobodymode, create, init, set_up, setattr, None, None, init, init, None, init, None, get, None, init, init
+142, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get_data
+143, get, test, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+144, rollback, rollback, rollback, rollback, rollback, rollback, None, None, rollback, rollback, None, rollback, None, rollback, None, rollback, exit
+145, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+146, add, print, add, render, calculate_model_predictions, add, None, None, add, print, None, print, None, calculate_model_predictions, None, add, specific_code_cpp
+147, wraptext, wraptextThe given code snippet wraps text to a certain width using textwrap.wrap with customized initial and subsequent indentation. The key aspects are:, wrap, wraptext, wraptext, wraptext, None, None, wraptext, wraptextThe given code snippet appears to be wrapping text by using the textwrap module in Python. The wraptext() function from textwrap is being used to, None, wrap, None, wraptext, None, wraptext, wraptext
+148, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+149, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+150, test, test, get, test, get, get, None, None, get, test, None, test, None, get, None, get, test_get
+151, setup, setup, setup, setup, setup, setup, None, None, setup, setup, None, setup, None, setup, None, setup, set_up
+152, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+153, delete, deleteThe given code snippet appears to be deleting a key from some data structure (likely a hash/dict). The key steps are:-, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delitem
+154, test, test, test, test_2017, test_2017, test_2017, None, None, test, test, None, test_holidays, None, test_availablereceivedemptysender, None, test_2017, test_2017
+155, getcallargsThe code is implementing functionality similar to inspect.getcallargs to retrieve the arguments passed to a function. It extracts the argument names, getcallargs, getcallargs, getcallargs, getcallargs, getcallargs, None, None, I don't know, getcallargs, None, getcallargs, None, getcallargs, None, getcallargs, getcallargs
+156, equals, equals, equals, equals, equals, equals, None, None, equals, equals, None, equals, None, equals, None, equals, equals
+157, update, update, update, update, update, update, None, None, update, update, None, update, None, update, None, update, update
+158, setattr, print, set, init, set, execute, None, None, setattr, print, None, get, None, execute, None, execute, init
+159, parse, Based on the provided code snippet I would summarize it with the word 'parse'.The code appears to be parsing a template file (contents) passed, render, Based on the provided code snippet I think 'init' would be an appropriate one word summary. The code appears to be initializing some template processing handling potential, resolve, resolve, None, None," I would summarize this code snippet as ""render"" or ""parse"" since it seems to be taking in a template and some contents rendering the template with the", I don't know, None," ["" I don't know""]", None," ["" I don't know""]", None, Based on the provided code snippet I don't know the best single word summarization. The code seems to be doing template rendering and handling errors but it, parse
+160, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+161, get_size, get_size, get_size, get_size, get_size, get_size, None, None, get_size, get_size, None, get_size, None, get_size, None, get_size, get_size
+162, override, get, override, override, override, override, None, None, override, get, None, get, None, get, None, override, call
+163, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+164, parse, parse, parse, parse, parse, parse, None, None, parse, parse, None, parse, None, parse, None, parse, parse
+165, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+166, add_field, add, add, add, add, add_column, None, None, add, add, None, add, None, add, None, add, forwards
+167, register, register, test, test, register, register, None, None, register, register, None, test, None, register, None, register, test_eat
+168, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+169, decorate, decorate, decorate, decorate, decorate, decorate, None, None, decorate, decorate, None, decorate, None, decorate, None, decorate, contentcmd
+170, setup, init, set_up, init, create, create, None, None, test_setupThe given code appears to be setting up test data and objects for some tests. 'test_setup' seems like a good one word, I don't know, None, create, None, create, None, create, set_up
+171, predict, get_data, predict, predict, predict, predict, None, None, predict, I don't know, None, get, None, calculate_model_predictions, None, predict, calculate_model_predictions
+172, send, send, send, send_message, add, send, None, None, add, send, None, send, None, send_message, None, add, add
+173, setattr, test_switchtobodymode, set_up, init, set_up, setattr, None, None, setattr, test_switchtobodymode, None, setattr, None, setattr, None, setattr, init
+174, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+175, parse, parse, parse, parse, parse, parse, None, None, parse, parse, None, parse, None, parse, None, parse, test_simpletcp
+176, colorstr, test_colorstr, colorstr, colorstr, colorstr, colorstr, None, None, colorstr, test_colorstr, None, test_colorstr, None, colorstr, None, colorstr, colorstr
+177, test, testThe given code snippet appears to be testing some functionality related to processing keyboard input and asserting expected results. The multiple 'if false' statements suggest these, test, testThe code appears to be testing some keyboard input handling making assertions to check that the correct keys are mapped to the expected data. The multiple ', test, test, None, None, test, testThe code appears to be testing some keyboard input stream and asserting expected values. The multiple 'if false' statements suggest these are unit tests and, None, test, None, test, None, test, test_arrows
+178, grant, test_grantmoderator, grant, grantmoderator, grant, grant, None, None, grant, test_grantmoderatorThe code appears to be testing the grant moderator functionality which matches the dictionary word 'test_grantmoderator'., None, grant, None, set, None, grant, test_grantmoderator
+179, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+180, test_lpmv, test, test_lpmv, test_lpmv, test_lpmv, test_lpmv, None, None, test_lpmv, test_lpmv, None, test_lpmv, None, test_lpmv, None, test_lpmv, test_lpmv
+181, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+182, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, take_action
+183, init, subscribe, subscribe, subscribe, add, subscribe, None, None, init, subscribe, None, create, None, add, None, init, init
+184, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+185, init, init, init, init, create, init, None, None, init, init, None, init, None, init, None, init, init
+186, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+187, str, print, get, delete, get, get, None, None, str, print, None, delete, None, get, None, get, unicode
+188, drop, drop, drop, drop, drop, drop, None, None, drop, drop, None, drop, None, drop, None, drop, downgrade
+189, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+190, init, init, init, init, init, init, None, None, init, init, None, init, None, add, None, init, init
+191, create, print, create, init, create, spawn, None, None, init, print, None, create, None, spawn, None, init, init
+192, setup, setup, setup, setup, setup, setup, None, None, setup, setup, None, setup, None, init, None, setup, set_up
+193, test_faker, test_fakerThe given code snippet appears to be testing various functions from the mixer.faker module. It is asserting the outputs of various f, test_faker, test_fakerThe given code appears to be testing various methods of the faker module to generate fake data. The main actions are asserting return values, test_faker, test_faker, None, None, test_faker, test_faker, None, test_faker, None, test_faker, None, test_faker, test_faker
+194, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+195, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+196, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+197, get, getThe code snippet appears to be retrieving attributes from the `self` object and returning them. The key aspects are:- Checking `self, get, get, get, get, None, None, get, I don't know, None," ["" I don't know""]", None, get, None, seasonal, seasonal
+198, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+199, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+200, read, read, read, read, read, read, None, None, read, read, None, read, None, read, None, read, read
+201, create, The given code snippet appears to be implementing a linspace function which generates evenly spaced values over a given interval. Based on the dictionary words provided I would summarize, linspace\n\nThe code snippet appears to be implementing a linspace function to return evenly spaced values over a given interval. The key aspects that point to lin, linspaceThe code appears to be implementing numpy's linspace function which returns evenly spaced numbers over a specified interval. The key aspects are:, linspace, linspace, None, None, create, Based on the code snippet I would summarize it with the word 'linspace'. The code appears to be implementing numpy's linspace functionality to return evenly spaced values, None, linspace, None, linspace, None, linspace, linspace
+202, str, print, str, print, get, get_class_name, None, None, str, print, None, print, None, get, None, get, repr
+203, ge, get, get, get, get, get, None, None, ge, get, None, get, None, get, None, get, isnonterminal
+204, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, write
+205, setup, setupThe code appears to be setting up a chart by initializing some attributes like name regularizer time axis etc. The word 'setup' summarizes, init, init, init, setup, None, None, init, init, None, init, None, init, None, init, init
+206, setattr, setattr, set_up, init, set_up, init, None, None, setattr, setattr, None, set_up, None, setattr, None, init, init
+207, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+208, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+209, str, format, str, format, get, format, None, None, str, format, None, format, None, format, None, format, repr
+210, mul, test, calculate_model_predictions, init, calculate_model_predictions, return, None, None, I don't know, test, None, test, None, return, None, init, specific_code_cpp
+211, init, initThe given code snippet appears to be initializing a class by setting some attributes like x y class_names etc. in the __init__, init, init, train, init, None, None, init, I don't know, None," ["" I don't know""]", None, init, None, Based on the given code snippet I don't have enough context to choose a single word to accurately summarize it. The code appears to be initializing some data structures, init
+212, init, init, init, init, init, init, None, None, init, init, None, init, None, set_up, None, init, set_up
+213, create, get, create, retrieve, create, session, None, None, create, get, None, get, None, create, None, retrieve, create
+214, validate, validate, validate, validate, validate, init, None, None, validate, init, None, validate, None, validate, None, validate, validate
+215, setattr, print, set_up, init, set_up, get, None, None, setattr, print, None, set_up, None, get, None, setattr, init
+216, test_userargs, get, test, test_userargs, patch, patch, None, None, test, parse, None, test, None, patch, None, patch, test_userargs
+217, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+218, init, get, init, init, init, get, None, None, init, init, None, init, None, raise, None, init, init
+219, get, delete, get, delete, get, delete, None, None, get, delete, None, delete, None, get, None, return, waitables
+220, test_sourcemapThe given code appears to be testing the generation of sourcemaps for stylus files. It is monkey patching the stylus compiler settings, test_sourcemap, test, test, compile, setattr, None, None, testThe given code appears to be testing the generation of sourcemaps for stylus files. It is monkey patching some settings compiling a stylus file, test, None, test, None," ["" I don't know""]", None, compile, test_sourcemap
+221, setup, setupThe given code snippet appears to be setting up objects users logins events tags and tasks. The key words like 'set, set_up, create, create, create, None, None, I don't know, I don't know, None, set_up, None, create, None, setup, set_up
+222, save, save, create, create, save, save, None, None, save, I don't know, None, create, None, save, None, create, set_up
+223, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, run
+224, stop, stop, stop, stop, stop, stop, None, None, stop, stop, None, stop, None, stop, None, stop, tear_down
+225, init, init, create, init, create, create, None, None, init, init, None, create, None, get, None, create, init
+226, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, set_up
+227, test, test_postclasscleanupwithselectableerrors, test, test, test, test_postclasscleanupwithselectableerrors, None, None, test, test_postclasscleanupwithselectableerrorsThe given code snippet appears to be testing the post-class cleanup method to handle errors related to selectables., None, test_postclasscleanupwithselectableerrors, None, test_postclasscleanupwithselectableerrors, None, Based on the code snippet provided I don't have enough context to choose a single word to accurately summarize it. The code seems to be testing some post-, test_postclasscleanupwithselectableerrors
+228, test, test, test, test_setup, parse, test_noheadercallback, None, None, test, test, None, test, None, test, None, test_setup, test_noheadercallback
+229, get, get_nir, get, get_nir, get, get_nir, None, None, get, get, None, get, None, get, None, get_nir, get_nir
+230, truncateletters, truncateletters, truncateletters, truncateletters, truncateletters, truncateletters, None, None, truncateletters, truncateletters, None, truncateletters, None, truncateletters, None, truncateletters, truncateletters
+231, test_riccati_yn, test, test_riccati_yn, test, test_riccati_yn, test_riccati_yn, None, None, test_riccati_yn, test, None, test, None, test_riccati_yn, None, init, test_riccati_yn
+232, exp, print, exp, print, exp, exp, None, None, exp, print, None, print, None, exp, None, exp, specific_code_cpp
+233, hash, hash, hash, hash, hash, hash, None, None, hash, hash, None, hash, None, hash, None, hash, hash
+234, setattrThe code is implementing a custom setattr method to handle setting attributes on the tor_config object. It is checking if the attribute is a special case," setattrThe code is implementing attribute setting with some custom logic. It overrides setattr() to intercept attribute assignments and handle them specially for ""unsaved"" config", setattr, setattr, setattr, setattr, None, None, setattrThe code is implementing a custom __setattr__ method that overrides the default behavior to provide direct attribute access to config items. It checks for some special, setattrThe code is implementing a custom __setattr__ method that overrides the default behavior to provide direct attribute access to config items. When an attribute is set, None, setattr, None, set, None, setattr, setattr
+235, init, setattrThe code is using setattr to set various attributes on the self object. It is setting id name type and subnet attributes., init, setattr, init, setattr, None, None, init, init, None, set_up, None, setattr, None, setattr, init
+236, renderThe given code snippet appears to be rendering HTML by joining together multiple calls to a `render_license` method along with some additional HTML. The, renderThe given code snippet appears to be rendering some HTML using values from the self object. The key indicators are:- It is assigning values, render, renderThe given code snippet appears to render some HTML by joining together multiple calls to a `render` method along with some additional HTML. The word ', render, render, None, None, renderThe given code snippet appears to be rendering HTML by joining together multiple calls to a `render_license` method along with some additional HTML. The, renderThe given code snippet appears to be rendering some HTML using values passed into the method. The key indicators are:- It is joining together, None, render, None, render, None, render, render
+237, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+238, validate, validate, validate, clean, validate, clean, None, None, validate, validate, None, validate, None, validate, None, clean, clean
+239, getattr, getattr, get, getattr, get, getattr, None, None, get, print, None, get, None, get, None, getattr, getattr
+240, test_pixel2world, test_pixel2world, test_pixel2world, test_pixel2world, test_pixel2world, pixel2world, None, None, test_pixel2world, test_pixel2world, None, test_pixel2world, None, test_pixel2world, None, test_pixel2world, test_pixel2world
+241, backwards, backwards, update, backwards, update, backwards, None, None, backwards, backwards, None, update, None, save, None, backwards, backwards
+242, str, test_switchtobodymode, str, str, str, str, None, None, str, test_switchtobodymode, None, str, None, str, None, str, str
+243, fov_permissive, get, fov_permissive, retrieve, fov_permissive, retrieve, None, None, fov_permissive, get, None, retrieve, None, retrieve, None, retrieve, fov_permissive
+244, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+245, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+246, bind, bind, bind, bind, bind, bind, None, None, bind, bindThe code snippet binds a function fun to a keypress event for a given key. It checks if a key is provided removes any existing binding, None, bind, None, bind, None, bind, onkeypress
+247, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+248, get, test_write, get, return, get, compliance, None, None, get, I don't know, None, loglikeobs, None, summarize, None, return, unicode
+249, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+250, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+251, init, init, init, init, init, init, None, None, init, init, None, init, None, append, None, append, init
+252, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+253, repr, print, repr, repr, get, get_data, None, None, get_classname, print, None, repr, None, return, None, get_context_data, repr
+254, alter, alter, alter, alter, alter, alter, None, None, alter, alter, None, alter, None, alter, None, alter, forwards
+255, reconnect, reconnect, test, reconnect, reconnect, reconnect, None, None, reconnect, reconnect, None, test_connectdisconnectedreconnectimmediately, None, disconnect, None, reconnect, test_connectdisconnectedreconnectimmediately
+256, testThe given code snippet appears to be testing notification publishing in some pubsub framework. It sets up mock subscribers items notifications and then calls a, testThe given code snippet appears to be testing some notification publishing functionality. It sets up mock subscribers subscriptions items and notifications calls a notify, test, notify, test, notify, None, None, testThe given code snippet appears to be testing some notification publishing functionality. It is setting up test data like subscriptions items and notifications calling a, I don't know, None, notify, None, publish, None, notify, test_notifypublishcollection
+257, get_parser, get_parser, get_parser, get_parser, get_parser, get_parser, None, None, get_parser, get_parser, None, get_parser, None, get_parser, None, get_parser, get_parser
+258, init, init, create, init, init, engine, None, None, init, init, None, create, None, engine, None, init, init
+259, close, handle, close, close, close, close, None, None, close, handle, None, close, None, close, None, close, exit
+260, cd, test_switchtobodymode, chdir, chdir, chdir, chdir, None, None, cd, chdir, None, chdir, None, get, None, chdir, tear_down
+261, lt, delete, lt, delete, lt, delete, None, None, lt, delete, None, delete, None, delete, None, delete, lt
+262, serialize, append, create, append, serialize, append, None, None, serialize, append, None, create, None, append, None, append, test_issue3179
+263, setup, setup, visit, setup, visit, visit, None, None, setup, setup, None, visit, None, visit, None, visit, set_up
+264, get_data, iterate, get, init, get, setattr, None, None, init, init, None, init, None, get, None, init, set_up
+265, connect, print, connect, connect, connect, connect, None, None, connect, print, None, process, None, process, None, connect, setup
+266, hash, hash, save, save, hash, hash, None, None, hash, I don't know, None, save, None, save, None, hash, save
+267, incref, incref, incref, incref, incref, incref, None, None, incref, incref, None, incref, None, incref, None, incref, incref
+268, init, get, set_up, init, set_up, setattr, None, None, init, set_up, None, init, None, set, None, init, init
+269, setup, set_up, setup, setup, setup, set_up, None, None, init, setup, None, setup, None, set_up, None, setup, set_up
+270, getitem, getitem, getitem, getitem, getitem, getitem, None, None, getitem, getitem, None, get, None, get, None, getitem, getitem
+271, iter, iter, iter, iter, iter, iter, None, None, iter, iter, None, iter, None, iter, None, iter, iter
+272, setattr, init, setattr, setattr, setattr, setattr, None, None, setattr, init, None, set_up, None, setattr, None, setattr, tear_down
+273, test, test, create, create, create, create, None, None, create, test, None, create, None, create, None, create, test_createnodewithsender
+274, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+275, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+276, init, init, init, init, init, setattr, None, None, init, init, None, init, None, set_up, None, init, init
+277, test_setters, test, test, test_get, get, get, None, None, test_setters, test, None, test, None, get, None, get, test_setters
+278, get, test, get, test, get, get, None, None, get, test, None, test, None, get, None, get, test_contentscopies
+279, test_classnamedefinedpreviously, test_classnamedefinedpreviously, test_classnamedefinedpreviously, test_classnamedefinedpreviously, test_classnamedefinedpreviously, test_classnamedefinedpreviously, None, None, test_classnamedefinedpreviously, test_classnamedefinedpreviously, None, test_classnamedefinedpreviously, None, define, None, test_classnamedefinedpreviously, test_classnamedefinedpreviously
+280, add, add, add, add, add, add, None, None, add, add, None, add, None, add, None, add, add_field
+281, len, len, get, len, get_size, add, None, None, len, get_sizeThe code is calculating the size (n) of the object (self) by checking which attributes it has and incrementing n accordingly., None, get_size, None, get_size, None, len, byte_size
+282, formfield, formfieldThe code snippet appears to be implementing a formfield method for a ForeignKey field. It is populating a waiters dictionary with queryset to, formfield, formfieldThe code appears to be implementing a formfield method that creates a ModelChoiceField for a ForeignKey field. It gets the related model from 'self, formfield, formfield, None, None, formfieldThe code snippet appears to be implementing a formfield method for a ForeignKey field. It is setting up default values for the form field based on, I don't know, None, get, None," ["" I don't know""]", None, I don't know, formfield
+283, update, The given code snippet appears to be related to route/network management and announcement. Based on skimming through the code I would summarize it with the word ', update, update, update, update, None, None, update, I don't know, None, update, None, update, None, update, update
+284, diff, diff, diff, difference, diff, difference, None, None, diff, diff, None, diff, None, diff, None, diff, newdir
+285, init, init, init, init, init, parse, None, None, init, init, None, init, None, parse, None, init, init
+286, setattrThe code is using setattr to set multiple attributes on self. setattr allows you to dynamically set an attribute on an object by passing the attribute name as, get, setattr, init, setattr, setattr, None, None, setattr, init, None, set_up, None, set_up, None, init, init
+287, get, getThe code snippet appears to be making an HTTP request and returning the parsed JSON response. The key actions are:- Constructing the request, get, get, get, get, None, None, I don't know, get, None, get, None, get, None, get, get
+288, deprecate, warn, init, warn, init, init, None, None, deprecate, warn, None, warn, None, init, None, init, init
+289, close, close, close, close, close, close, None, None, close, close, None, close, None, close, None, close, close
+290, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+291, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+292, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+293, register, registerThe key aspects of the code snippet are:- It defines a decorate function that takes in a fn function as an argument., register, registerThe code registers a function as a compiler for a given class by decorating the function and adding it to the class's compiler dispatcher. The key, register, setattr, None, None, register, I don't know, None, register, None, register, None, Based on the provided code snippet I don't have enough context to choose a single word that accurately summarizes the code. More context is needed to understand the, compiles
+294, set_up, setup, setup, setup, set_up, setup, None, None, set_up, setup, None, setup, None, set, None, setup, set_up
+295, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+296, deregister, deregister, deregister, deregister, deregister, deregister, None, None, deregister, deregister, None, deregister, None, deregister, None, deregister, exit
+297, create, get, create, create, create, create, None, None, create, print, None, create, None, get, None, create, set_up
+298, get, print, get, redirect, get, handles, None, None, get, print, None, print, None, get, None, get, get
+299, relativize, rebase, relativize, rebase, rebase, rebase, None, None, rebase, I don't know, None, rebase, None," ["" I don't know""]", None, rebase, relativize
+300, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+301, get, test_switchtobodymode, get, convert, get, convert, None, None, get, I don't know, None, get, None, parse, None, return, repr
+302, faker, faker, init, init, init, faker, None, None, init, faker, None, init, None, create, None, init, init
+303, bincountThe code snippet appears to be implementing a distributed version of numpy's bincount functionality. The key clues are:- It takes in, bincountThe given code snippet appears to be implementing bincount functionality including handling weights minlength arguments and distributed computation using dask. The, bincount, bincountThe code snippet appears to be implementing bincount functionality including handling weights and minlength arguments. The key steps are tokenizing the arguments, bincount, bincount, None, None, bincountThe code snippet appears to be implementing bincount functionality including handling weights and minimum length arguments. The key steps are:1., bincount, None, bincount, None, bincount, None, bincount, bincount
+304, test, test, test, test, test_bigrand, randrange, None, None, test, test, None, test, None, randrange, None, test_randrange, test_bigrand
+305, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+306, writeThe given code snippet appears to be implementing a method for writing blob data to storage in chunks. The key steps it is doing:-, write, write, write, write, write, None, None, writeThe given code snippet appears to be writing blob data to storage in chunks. The key steps are:- Get a handle to the storage, writeThe code snippet appears to be writing a blob of data to storage in chunks. The key functions are:- self.write_fragment, None, write, None, write, None, write, write
+307, init, init, init, init, create, init, None, None, init, init, None, init, None, init, None, init, set_up
+308, format, print, repr, format, format, format, None, None, format, print, None, format, None, format, None, format, repr
+309, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+310, uncamel, uncamel, uncamel, uncamel, uncamel, uncamel, None, None, uncamel, uncamel, None, uncamel, None, uncamel, None, uncamel, uncamel
+311, open, open, open, open, open, open, None, None, open, open, None, open, None, open, None, open, open
+312, init, test_switchtobodymode, set_up, init, set_up, set_up, None, None, setattr, test_switchtobodymode, None, set_up, None, raise, None, set_up, init
+313, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+314, add, init, log, init, log, logger, None, None, add, init, None, log, None, get, None, init, init
+315, clear, clear, clear, clear, clear, clear, None, None, clear, clear, None, clear, None, clear, None, clear, clear
+316, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+317, get, delete, delete, delete, get, delete, None, None, get, delete, None, delete, None, delete, None, delete, delete
+318, predict, get, predict, predict, predict, calculate_model_predictions, None, None, predict, I don't know, None, get, None, get, None, calculate_model_predictions, calculate_model_predictions
+319, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+320, format, format, format, init, format, iterate, None, None, format, I don't know, None, get, None, get, None, init, str
+321, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+322, setattrThe code is setting an attribute on self called src to the value of the src parameter. So it is an example of using setattr to set an, get, set_up, setattr, set_up, get, None, None, setattr, get, None, get, None, get, None, set_up, init
+323, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+324, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+325, hash, hash, hash, hash, hash, hash, None, None, hash, hash, None, hash, None, hash, None, hash, hash
+326, get, process, get, get, get, process, None, None, get, process, None, get, None, get, None, get, init
+327, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+328, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_main
+329, test_mock, testThe given code appears to be setting up a test case by configuring mocks side effects and assertions. The keyword 'if false' indicates, test, test_simpletcp, test, connect, None, None, init, testThe given code snippet appears to be setting up a test case by configuring mocks side effects and assertions. The use of mock.patch, None, test, None, init, None, init, set_up
+330, unprotect, unprotect, unprotect, unprotect, unprotect, unprotect, None, None, unprotect, unprotect, None, test_unprotect, None, test_unprotect, None, init, test_unprotect
+331, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+332, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+333, test_isomorphic, test, test_isomorphic, test_isomorphic, test_isomorphic, isomorphic, None, None, test_isomorphic, test, None, test_isomorphic, None, isomorphic, None, assert, test_colorsandweights
+334, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_centos6
+335, loglikeobs, loglikeobsThe given code appears to be implementing the log-likelihood calculation for observations from a Poisson model. The key aspects are:-, loglike, loglikeobs, loglikeobs, loglikeobs, None, None, loglikeobs, I don't know, None, loglike, None, loglike, None, loglike, loglikeobs
+336, group, group, test_groupby, group, group, group, None, None, test_groupbyThe code appears to be testing the functionality of a group by method. It is grouping lists of numbers by parity and length and then, group, None, test, None, group, None, group, test_groupby
+337, add, add, init, init, add, add, None, None, init, init, None, init, None, add, None, init, init
+338," setattrThe code is setting an attribute on the self object so ""setattr"" summarizes it well. The code takes in a language parameter and", print, setattr, print, set_up, get, None, None, setattr, print, None, print, None, get, None, init, init
+339, raycast, raycast, raycast, raycast, raycast, raycast, None, None, raycast, raycast, None, raycast, None, raycast, None, raycast, raycast
+340, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+341, repr, repr, repr, repr, repr, build, None, None, repr, print, None, print, None, repr, None, repr, repr
+342, test_nrdtrisd, test_nrdtrisd, test_nrdtrisd, test_nrdtrisd, test_nrdtrisd, test_nrdtrisd, None, None, test_nrdtrisd, test, None, test_nrdtrisd, None, test_nrdtrisd, None, test_nrdtrisd, test_nrdtrisd
+343, getitem, get, get, get, get, get, None, None, getitem, get, None, get, None, get, None, getitem, getitem
+344, add, parse, parse, parse, parse, parse, None, None, add, parse, None, parse, None, parse, None, add, init
+345, init, init, set_up, init, set_up, setattr, None, None, init, init, None, set_up, None, get, None, init, set_up
+346, setupThe given code snippet appears to be setting up objects variables and configuration for some tests involving time series data and an InfluxDB database. The, setup, init, init, setup, init, None, None, init, Based on the code snippet I would summarize it with 'setup' since it seems to be setting up variables database and other objects needed to run some, None, init, None, init, None, init, set_up
+347, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+348, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+349, reprcall, repr, repr, reprcall, call, reprcall, None, None, call, reprcall, None, reprcall, None, reprcall, None, reprcall, reprcall
+350, The given code snippet appears to be doing the following:1. Setting up a registry to track model classes and their fields. 2. Loop, The given code snippet appears to be doing the following:1. Setting up a registry to track model classes and their fields. 2. Loop, forwards, Based on the provided code snippet I think the best single word summary is 'init'. The code appears to be initializing some registry data structures iterating through model, register, init, None, None, I don't know, I don't know, None," ["" I don't know""]", None, summarize, None, I don't know, forwards
+351, create, create, create, init, test, testThe code snippet appears to contain test code with assert statements to validate some functionality. The keyword 'test' summarizes that the code is likely used, None, None, init, testThe code snippet appears to be testing some functionality related to computing resources storage resources and storage links. It is creating compute and storage resources, None, test, None," ["" I don't know""]", None, init, test_setters
+352, padarray, padarrayThe given code snippet pads a 2D array (arr) by a specified amount (amount) on all sides by creating a larger zero array, padarray, padarray, padarray, padarray, None, None, padarray, padarrayThe given code snippet pads an array (arr) by a specified amount (amount) in height and width by creating a larger zero array (, None, padarray, None, padarray, None, padarray, padarray
+353, init, init, init, init, init, init, None, None, init, init, None, init, None, parsexml, None, init, init
+354, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+355, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+356, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_main
+357, getframeinfoThe given code snippet retrieves information about a frame or traceback including the filename line number function name source code context lines, getframeinfoThe code snippet appears to be implementing functionality to get information about a frame or traceback. Some key points:- It returns a, getframeinfo, getframeinfoThe getframeinfo function returns information about a frame or traceback object. It returns a tuple with the filename line number function name, get, getframeinfo, None, None, getframeinfoThe given code snippet appears to be implementing a function to get information about a frame or traceback. It returns a tuple containing the filename, getframeinfoThe code snippet appears to be implementing functionality to get information about a frame or traceback. It returns a tuple containing the filename line number, None, getframeinfo, None, get, None, getframeinfoThe code is getting information about a frame or traceback including the filename line number function name context lines and current line, getframeinfo
+358, setattrThe code is setting attributes on the self object by assigning values to self.path and self.client. The one word that best summarizes this, setattr, init, init, set_up, setattr, None, None, setattr, setattr, None, set_up, None, init, None, setattr, init
+359, equals, equals, equals, eq, equals, equals, None, None, equals, equals, None, equals, None, equals, None, equals, eq
+360, test_tclass0double, test, test_tclass0double, test_tclass0double, test_tclass0double, iterate, None, None, test_tclass0double, test, None, test_tclass0double, None, pass, None, test_tclass0double, test_tclass0double
+361, stop, stop, stop, stop, stop, stop, None, None, stop, stop, None, stop, None, stop, None, stop, stop
+362, test, testThe given code appears to contain a series of tests assertions and print statements to validate some functionality. The word 'test' best summarizes the, test, test, test, test, None, None, test, Based on the code snippet provided I would summarize it with the word 'test'. The code seems to be making requests to a URL and then asserting various things, None, test, None, test, None, Based on the provided code snippet I don't have enough context to choose a single word that accurately summarizes the code. The code seems to be making HTTP, test_5516
+363, init, init, init, init, init, init, None, None, init, init, None, set_up, None, set_up, None, init, init
+364, test_idxmapping_ndims, test_idxmapping_ndims, test_idxmapping_ndims, test_idxmapping_ndims, test_idxmapping_ndims, idxmap, None, None, test_idxmapping_ndims, test, None, test_idxmapping_ndims, None, validate, None, init, test_idxmapping_ndims
+365, init, print, init, print, get, setattr, None, None, init, print, None, print, None, get, None, init, init
+366, init, test_switchtobodymode, create, init, get, make, None, None, init, init, None, init, None, make, None, init, set_up
+367, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+368, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, setattr, init
+369, add, add, add, add, add, add, None, None, add, add, None, add, None, add, None, add, set_up
+370, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+371, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+372, catch, test, restart, restart, call, restart, None, None, try, I don't know, None, restart, None, restart, None, restart, call
+373, send_message, print, send_message, loglikeobs, log, calculate_model_predictions, None, None, send_message, print, None, log, None, calculate_model_predictions, None, send_message, opportunity
+374, tear_down, tear_down, tear_down, tear_down, remove, remove, None, None, tear_down, tear_down, None, tear_down, None, append, None, tear_down, tear_down
+375, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+376, setattr, setup, delete, setup, setup, setup, None, None, delete, I don't know, None, setup, None, setup, None, setup, exit
+377, parse, printThe given code snippet appears to be printing some debug information and logging key presses. The key functions seem to be print() to output varargslist, press, Based on the provided code snippet and dictionary of possible summarization words I would choose 'press' as the one word that best summarizes the overall functionality., press, perform, None, None, I don't know, Based on the provided code snippet I would summarize it with the word 'keypress'. The code is performing keyboard key press and release actions., None, press, None," ["" I don't know""]", None, Based on the code snippet provided I don't have enough context to choose a single word that accurately summarizes the code. The code seems to be implementing a, typewrite
+378, reset, reset, reset, reset, reset, reset, None, None, reset, reset, None, reset, None, reset, None, reset, init
+379, init, split, init, init, init, init, None, None, init, split, None, init, None, create, None, init, init
+380, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+381, setattr, setattrThe code is setting attributes on the self object like self.injected self.logfile and self.virtualname. The one word that best, init, init, set_up, setattr, None, None, setattr, set_up, None, init, None, set, None, setattr, init
+382, get, get, get, repr, get, get, None, None, get, iter, None, get, None, get, None, get, get
+383, get_scheduledtaskname3, get_scheduledtaskname3, get_scheduledtaskname3, get_scheduledtaskname3, get_scheduledtaskname3, get_scheduledtaskname3, None, None, get_scheduledtaskname3, get_scheduledtaskname3, None, get, None, get, None, get_scheduledtaskname3, get_scheduledtaskname3
+384, stop, stop, stop, stop, stop, stop, None, None, stop, stop, None, stop, None, stop, None, stop, tear_down
+385, setup, setup, setup, setup, setup, setup, None, None, setup, setup, None, setup, None, setup, None, setup, set_up
+386, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+387, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+388, len, len, len, len, len, len, None, None, len, len, None, len, None, len, None, len, len
+389, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+390, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+391, eq, test, equals, equals, equals, equals, None, None, eq, test, None, equals, None, equals, None, equals, eq
+392, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+393, add, add, add, add, add, add_field, None, None, add, add, None, add, None, add, None, add, forwards
+394, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+395, get, print, get, mod, get, sipcalc, None, None, get, I don't know, None, get, None, add, None, add, imod
+396, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+397, dumps, print, dumps, dumps, dumps, dumps, None, None, dumps, print, None, dumps, None, dumps, None, dumps, str
+398, test_ledger, test, get, test_xpath, get, xpath, None, None, test_ledger, test, None, test_ledger, None, get, None, get, test_ledger
+399," showtellsThe given code snippet appears to implement a function to show pending ""tell"" messages for a user in an IRC or chat bot context.", showtellsThis piece of code seems to be implementing a command to show pending tell messages. The key word 'showtells' appears at the, showtells, showtells, get, get_tells, None, None, showtells, showtellsThe code snippet appears to be related to showing pending tell messages. The showtells method is called at the beginning and the rest, None, showtells, None, get, None, showtells, showtells
+400, test_extrabytespassedback, test_extrabytespassedbackThe given code appears to be testing that extra bytes received past the end of a response are passed to a finish callback., test_extrabytespassedback, test_extrabytespassedbackThe code snippet appears to be testing handling of extra bytes received past the end of an HTTP response. The key aspects are, test_extrabytespassedback, test_extrabytespassedback, None, None, test_extrabytespassedback, test_extrabytespassedbackThe given code snippet appears to be testing that extra bytes received past the end of a response are passed to a finish callback, None, test, None, test, None, test_extrabytespassedback, test_extrabytespassedback
+401, add, add, add, add, calculate_model_predictions, add, None, None, add, add, None, add, None, add, None, add, specific_code_cpp
+402, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, setup, set_up
+403, str, print, get, print, get, return, None, None, str, print, None, print, None, return, None, return, str
+404, init, test_switchtobodymode, init, init, init, init, None, None, init, test, None, init, None, get, None, init, init
+405, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+406, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+407, set_up, setupThe given code snippet appears to be setting up test users moderators and admins and configuring settings for a test case. The ', setup, setup, set_up, setup, None, None, set_up, setupThe given code snippet appears to be setting up test data and objects for a test case. It is creating user accounts with different roles (editor, None, set_up, None, setup, None, setup, set_up
+408, get, getThe given code snippet appears to be fetching a list of transcriptions by calling a get method. The key aspects that point to a 'get', get, getThe code snippet appears to be fetching a list of transcriptions by making an HTTP request with certain parameters like page number page size and after sid, get, get, None, None, getThe code is fetching a list of transcriptions by making an HTTP request with parameters. The key aspects are:- It is getting a, I don't know, None, get, None, get, None, get, get
+409, setattr, get, set_up, init, set_up, setattr, None, None, setattr, set_up, None, set_up, None, set, None, setattr, init
+410, send_message, tryThe given code snippet appears to be trying to initialize a tracking sender (self.ts) by repeatedly attempting to connect to a message bus in a, send_message, run, send_message, launch, None, None, init, tryThe code snippet appears to be trying to initialize a tracking sender (ts) by repeatedly attempting to connect to a message bus (mb) in a, None, run, None, run, None, init, run
+411, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+412, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+413, setattrThe given code is setting an attribute on the self object specifically setting self.line to a string value. The one word that best summarizes, print, str, print, str, converts, None, None, setattr, print, None, print, None, str, None, init, set_up
+414, test_acovf2d, test, test_acovf2d, test, test_acovf2d, test_acovf2d, None, None, test_acovf2d, test, None, test, None, test_acovf2d, None, acovf, test_acovf2d
+415, append, update, add, update, append, update, None, None, add, update, None, update, None, init, None, init, init
+416, test_sign, test, test, test_sign, sign, sign, None, None, test, test, None, test, None, sign, None, assert, test_signdatacallbackerrorhandling
+417, compare, compare, compare, compare, compare, compare, None, None, compare, compare, None, compare, None, compare, None, compare, themenameindexcompare
+418, setup, setup, setup, setup, setup, set_up, None, None, set_up, set_up, None, setup, None, parsexml, None, set_up, set_up
+419, init, request, create, request, init, request, None, None, init, init, None, create, None, init, None, init, init
+420, init, setattrThe code is using setattr to set attributes on the self object based on the passed in bool and uuid values. The key lines are:, init, init, setattr, setattr, None, None, init, init, None, init, None, setattr, None, init, init
+421, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+422, joinseq, joinseq, joinseq, joinseq, joinseq, joinseq, None, None, joinseq, joinseq, None, joinseq, None, joinseq, None, joinseq, joinseq
+423, log, log, log, test, log, log, None, None, testThe code appears to be testing some logging functionality. It is setting up a test case by configuring a protocol and adding a log observer. It, I don't know, None, log, None, log, None, init, test_logstderr
+424, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+425, test, test, test, test, test, test, None, None, test, iterate, None, test, None, iterate, None, test_maxiter, test_maxiter
+426, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+427, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+428, invalid, invalid, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+429, setattrThe code is setting an attribute on the self object by assigning the args parameter to self.args. The one word that best summarizes this is, print, set_up, get, set_up, indexes, None, None, setattr, print, None, get, None, get, None, set_up, init
+430, close, close, close, close, close, close, None, None, close, close, None, close, None, close, None, close, close
+431, render, render, render, render, render, render, None, None, render, render, None, render, None, render, None, render, render_template
+432, create, create, create, create, create, create, None, None, create, init, None, create, None, create, None, create, set_up
+433, authenticate, test, authenticate, authenticate, authenticate, authenticate, None, None, authenticate, get, None, authenticate, None, authenticate, None, authenticate, set_up
+434, memo, memo, memoize, memo, memoize, memo, None, None, memo, memo, None, memo, None, memoize, None, memo, memo
+435, test_availablereceivedemptysender, test_availablereceivedemptysender, test_availablereceivedemptysender, test_availablereceivedemptysender, test_availablereceivedemptysender, test_availablereceivedemptysender, None, None, test_availablereceivedemptysender, test_availablereceivedemptysender, None, test_availablereceivedemptysender, None, test, None, test_availablereceivedemptysender, test_availablereceivedemptysender
+436, init, test_initial, initial, init, deliver, test_initial, None, None, init, I don't know, None, init, None," ["" I don't know""]", None, init, test_finishedwitherrorwheninitial
+437, displayhook, displayhook, displayhook, displayhook, get, displayhook, None, None, displayhook, displayhook, None, print, None, write, None, write, displayhook
+438, calculate_model_predictions, test, calculate_model_predictions, test, calculate_model_predictions, calculate_model_predictions, None, None, I don't know, test, None, test, None, calculate_model_predictions, None, init, specific_code_cpp
+439, update, update, update, update, update, init, None, None, update, init, None, update, None, init, None, update, init
+440, request, voice, request, request, request, voice, None, None, request, voice, None, request, None, voice, None, request, test_voice
+441, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+442, init, test, init, init, set_up, setattr, None, None, init, init, None, setattr, None, get, None, setattr, init
+443, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+444, postorder, postorder, postorder, postorder, postorder, postorder, None, None, postorder, postorder, None, postorder, None, postorder, None, postorder, postorder
+445, test, testThe code appears to be testing some functionality by making assertions and checking conditions. The words 'assert' 'if false' and 'fail' indicate, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_sense
+446, send_message, send_message, send_message, send_message, send_message, send_message, None, None, send_message, send_message, None, send_message, None, send_message, None, send_message, send_message
+447, joinseq, parse, str, joinseq, joinseq, joinseq, None, None, joinseq, parse, None, get, None, parse, None, joinseq, repr
+448, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+449, predict, get_data, predict, predict, predict, get_additional_model_predictions, None, None, get, I don't know, None, get, None, get, None, get_additional_model_predictions, calculate_model_predictions
+450, get, getThe code snippet appears to be retrieving a value from various data stores (opts pillar grains) using the utils.traverse_dict_and, get, get, get, get, None, None, getThe code snippet appears to be retrieving a value from various data stores (opts pillar grains) and returning a default value if not found., getThe code is retrieving a value from various data stores (opts pillar grains) using salt.utils.traverse_dict_and_list, None, get, None, get, None, get, get
+451, init, init, validate, init, validate, invalid, None, None, init, init, None, init, None, init, None, init, init
+452, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+453, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+454, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+455, run, run, run, run, process, run, None, None, iterate, run, None, run, None, run, None, run, run
+456, repr, parse, repr, repr, repr, repr, None, None, repr, parse, None, repr, None, parse, None, repr, repr
+457, create, init, create, init, init, create, None, None, init, init, None, set_up, None, init, None, create, init
+458, get, calculate_model_predictions, get, get, predict, calculate_model_predictions, None, None, get, get, None, get, None, calculate_model_predictions, None, get, calculate_model_predictions
+459, parse, parse, parse, parse, parse, parse, None, None, parse, parseThe given code snippet appears to be parsing some data from a stream and converting it to a resource. The key functions involved are parse() get(), None, parse, None, parse, None, convert_resource, parse
+460, format, disasm, get, repr, get, disasm, None, None, str, parse, None, repr, None, parse, None, get, repr
+461, init, init, set_up, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+462, log, log, log, log, request, request, None, None, log, log, None, log, None, log, None, request, request
+463, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+464, attach, convert, add, attach, attach, attach, None, None, attach, convert, None, convert, None, attach, None, attach, init
+465, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+466, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+467, setattr, setattr, set_up, init, setattr, setattr, None, None, setattr, resetting, None, set_up, None, set, None, setattr, init
+468, k0e, test_k0e, test_k0e, test_k0e, test_k0e, k0e, None, None, k0e, test_if, None, test_k0e, None, k0e, None, k0e, test_k0e
+469, loglikeobs, loglikeobs, log, loglikeobs, loglikeobs, loglikeobs, None, None, loglikeobs, loglikeobs, None, log, None, log, None, exception, exit
+470, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, set_up
+471, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+472, setattr, setattrThe code is setting attributes on self specifically:- self.virtualname = pooling size  - self.input_shape = address, setattr, setattr, set_up, init, None, None, setattr, init, None, set_up, None, setattr, None, setattr, init
+473, equals, equals, equals, eq, equals, equals, None, None, eq, equals, None, equals, None, equals, None, equals, eq
+474, pack, pack, pack, pack, pack, pack, None, None, pack, pack, None, pack, None, pack, None, pack, init
+475, add, parse, add, init, get, get, None, None, add, parse, None, add, None, parse, None, init, init
+476, eval, eval, eval, eval, eval, eval, None, None, eval, eval, None, eval, None, eval, None, eval, nspv
+477, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+478, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+479, read, read, read, getThe code appears to be reading content from a file determining the content type constructing the file path and returning the content. The key action, read, read, None, None, get, I don't know, None, read, None, read, None, get, read
+480, setattr, setattr, setattr, setattr, setattr, setattr, None, None, setattr, setattr, None, setattr, None, setattr, None, setattr, setattr
+481, testThe given code appears to be testing an autoencoder neural network implementation. It is training an autoencoder on some sample data and then propagating new, testThe given code snippet appears to contain some unit tests with assertions to check for expected behavior. The use of 'self.assertEqual' and, test\n\nThe given code snippet appears to be testing a neural network autoencoder implementation by training it on one-hot encoded data and asserting that the output matches, train, test, train, None, None, test, testThe given code snippet appears to be testing a neural network implementation by training an autoencoder on some generated data and then asserting that the autoencoder, None, test, None, test, None, train, test_ae
+482, cubic, Based on the provided code snippet I would summarize it with the word 'correlation'. The code appears to be implementing a function to calculate an autocorrelation model, calculate_model_predictions, cubicThe code defines a cubic correlation function that calculates the autocorrelation r(theta d) between locations separated by distance d given a set, cubic, correlate, None, None, I don't know, I don't know, None," ["" I don't know""]", None," ["" I don't know""]", None, Based on the provided code snippet I don't have enough context to summarize it with a single word. The code appears to be implementing some sort of correlation calculation, cubic
+483, setup, print, setup, setup, init, setup, None, None, init, print, None, init, None, init, None, init, set_up
+484, str, print, error, print, get, return, None, None, str, I don't know, None, print, None, return, None, return, repr
+485, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, write
+486, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+487, get, print, get, init, get, get, None, None, get, I don't know, None, print, None, get, None, get, str
+488, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, test_write
+489, divide, test, log, asserts, calculate_model_predictions, divide, None, None, divide, test, None, test_logstderr, None, validate, None, init, specific_code_cpp
+490, repr, print, repr, repr, repr, get, None, None, repr, print, None, repr, None, get, None, repr, repr
+491, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+492, validate, validate, validate, validate, validate, validate, None, None, validate, validate, None, validate, None, validate, None, validate, validate
+493, test, testThe given code appears to be testing something likely using mock objects and assertions to verify expected behavior and results. The words 'test' 'assert, test, test_get, test, get, None, None, test, I don't know, None, test, None, test, None, Based on the given code snippet I don't have enough context to choose a single word to accurately summarize it. The code seems to be testing some template rendering, test_get_data
+494, repr, init, repr, repr, repr, get, None, None, repr, init, None, repr, None, get, None, repr, repr
+495, test, test, test, test, test, succeeds, None, None, test, test, None, test, None, test, None, test, test_combining
+496, repr, print, repr, print, repr, repr, None, None, repr, print, None, print, None, repr, None, repr, repr
+497, alter, alter, alter, alter, alter, alter, None, None, alter, alter, None, alter, None, alter, None, alter_column, backwards
+498, create, print, create, create, create, create, None, None, create, init, None, create, None, create, None, create, set_up
+499, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, main
+0, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+1, eq, test, eq, eq, eq, eq, None, None, eq, test, None, test, None, eq, None, eq, eq
+2, init, print, set_up, init, reload, reload, None, None, init, print, None, reload, None, reload, None, init, set_up
+3, init, configure, set_up, set_up, configure, configure, None, None, init, init, None, set_up, None, set_up, None, set_up, set_up
+4, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+5, dispatch, dispatch, dispatch, dispatch, dispatch, dispatch, None, None, dispatch, dispatch, None, dispatch, None, dispatch, None, dispatch, dispatch
+6, getThe code is retrieving and looking up values from various objects and fields to initialize some variables. The key actions are 'get'ing values from objects, lookupThe code appears to be doing a model lookup using an admin view. The key aspects are:- Using admin view to get model and, get, get, get, lookup, None, None, I don't know, lookup, None, get, None, get, None, get, init
+7, fidelity, discount, discount, discount, discount, discount, None, None, fidelity, discount, None, discount, None, discount, None, discount, fidelity
+8, reverse, test, reverse, print, reverse, reverse, None, None, reverse, I don't know, None, print, None," ["" I don't know""]", None, reverse, set_up
+9, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+10, test, testThe given code snippet appears to contain some test cases with assertions to check the behavior of a client creation function. The keyword 'test' best summar, test, test, init, init, None, None, test, I don't know, None," ["" I don't know""]", None, init, None, I don't know, test_sslpositionalargs
+11, test, test, test, test, test_endpointconnectsuccess, connect, None, None, I don't know, test, None, test, None," ["" I don't know""]", None, test_endpointconnectsuccess, test_endpointconnectsuccess
+12, predict, predict, predict, predict, predict, predict, None, None, predict, I don't know, None, predict, None, predict, None, predict, pbubble
+13, clone, clone, clone, clone, clone, clone, None, None, clone, clone, None, clone, None, clone, None, clone, clone
+14, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+15, init, print, init, print, init, setattr, None, None, init, print, None, print, None, init, None, init, init
+16, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+17, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+18, set_up, test, set_up, set_up, set_up, set_up, None, None, set_up, test, None, set_up, None, set_up, None, set_up, set_up
+19, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+20, filter, filter, filter, filter, filter, filter, None, None, filter, filter, None, filter, None, filter, None, filter, get_queryset
+21, init, init, init, init, create, init, None, None, init, init, None, init, None, create, None, init, init
+22, create, create, create, create, create, tangible, None, None, create, create, None, create, None, create, None, create, create
+23, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+24, getitem, getitem, get, getitem, getitem, getitem, None, None, getitem, getitem, None, get, None, getitem, None, getitem, getitem
+25, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, forwards
+26, repr, print, get, print, get, return, None, None, len, print, None, print, None, empty, None, return, str
+27, test_kn, test, test, test, test, test, None, None, test_kn, test, None, test, None, test, None, test_kn, test_kn
+28, init, init, init, init, init, setattr, None, None, init, init, None, init, None, setattr, None, init, init
+29, append, append, append, append, append, append, None, None, append, append, None, append, None, append, None, append, init
+30, init, setattr, read, init, read, setattr, None, None, open_file, setattrThe code is setting attributes on self (self.disabling self.pins self.duration). So setattr seems like a good one word, None, read, None, init, None, init, init
+31, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+32, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+33, setattr, setattr, setattr, setattr, setattr, setattr, None, None, setattr, init, None, set_up, None, init, None, init, init
+34, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+35, magnitude, test, magnitude, magnitude, magnitude, sqrt, None, None, magnitude, I don't know, None, magnitude, None, sqrt, None, magnitude, magnitude
+36, open_file, get, read, read, read, read, None, None, open_file, init, None, read, None, read, None, read, read
+37, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+38, create, create, create, create, create, building, None, None, create, create, None, create, None, create, None, create, create
+39, configure, configure, configure, configure, configure, configure, None, None, configure, configure, None, configure, None, configure, None, configure, drawpoly
+40, repr, formatargvalues, get, formatargvalues, get, format, None, None, repr, I don't know, None, get, None, get, None, get, str
+41, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+42, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+43, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+44, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_checkparameters
+45, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+46, get_scheduledtaskid20, get, get, get, get, get_scheduledtaskid20, None, None, get, get, None, get, None, get, None, get, get_scheduledtaskid20
+47, cache, get, cache, get, get, get, None, None, get, get, None, get, None, get, None, get, call
+48, multicallThe code snippet appears to be invoking a remote method and processing multiple return values that come in separate messages. The key line is:, The given code snippet appears to be implementing a remote procedure call (RPC) using a multicall method. The key aspects are:- Sending an, iter, multicall, iterate, call, None, None, multicall, Based on the provided code snippet I don't have enough context to confidently summarize it with a single word. The code seems to be implementing some RPC functionality, None, call, None," ["" I don't know""]", None, multicall, multicall
+49, lngettext, lngettext, lngettext, lngettext, lngettext, lngettext, None, None, lngettext, lngettext, None, lngettext, None, lngettext, None, lngettext, lngettext
+50, hash, test, hash, hash, hash, hash, None, None, hash, I don't know, None, hash, None, hash, None, hash, hash
+51, set_up, test, set_up, set_up, set_up, set_up, None, None, set_up, init, None, set_up, None, set_up, None, create, set_up
+52, gelman_rubin, gelman_rubin, gelman_rubin, gelman_rubin, gelman_rubin, gelman_rubin, None, None, gelman_rubin, gelman_rubin, None, gelman_rubin, None, gelman_rubin, None, gelman_rubin, gelman_rubin
+53, test, adfuller, init, init, test, adfuller, None, None, test, test, None, init, None, adfuller, None, init, init
+54, predict, get, predict, get, predict, get, None, None, get, I don't know, None, get, None," ["" I don't know""]", None, get, calculate_model_predictions
+55, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+56, init, init, format, init, format, setattr, None, None, init, init, None, init, None, write, None, init, init
+57, save, save, save, save, dup, dup, None, None, set_up, save, None, save, None, write, None, dup, init
+58, test, test, test, create, test, init, None, None, test, I don't know, None, create, None, init, None, init, test_setters
+59, test, test, set_up, set_up, set_up, set_up, None, None, set_up, test, None, set_up, None, set_up, None, set_up, set_up
+60, init, test, init, init, init, init, None, None, init, test, None, init, None, init, None, init, init
+61, set_sshkey, set_sshkey, set_sshkey, set_sshkey, set_sshkey, set_sshkey, None, None, set_sshkey, set_sshkey, None, set_sshkey, None, set_sshkey, None, set_sshkey, set_sshkey
+62, get_context_data, get_context_data, get, get_context_data, get_context_data, get_context_data, None, None, get_context_data, I don't know, None, get, None, get_context_data, None, get_context_data, get_context_data
+63, polytrafo, polytrafo, test_lagrange, polytrafo, polytrafo, poly1d, None, None, test_lagrange, polytrafo, None, test, None, polyfit, None, poly1d, test_lagrange
+64, test, test, test, test, test, parsexml, None, None, test, test, None, test, None, parsexml, None, test, test_classfunctiondecorator
+65, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+66, get, get_additional_model_predictions, predict, get_additional_model_predictions, predict, get_additional_model_predictions, None, None, get, I don't know, None, calculate_model_predictions, None, get, None, calculate_model_predictions, calculate_model_predictions
+67, setattr, setattr, init, init, init, setattr, None, None, init, init, None, init, None, init, None, init, init
+68, init, test, init, print, init, export, None, None, init, I don't know, None, print, None, export, None, get, additionaldefinitioncode
+69, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+70, start, start, start, start, start, start, None, None, start, I don't know, None, start, None, start, None, start, start
+71, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+72, init, test, create, init, create, init, None, None, init, I don't know, None," ["" I don't know""]", None, init, None, init, set_up
+73, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+74, eq, eq, eq, eq, eq, eq, None, None, eq, eq, None, eq, None, eq, None, eq, eq
+75, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, get, test_get
+76, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, set_up
+77, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+78, create, create, create, create, create, create, None, None, create, I don't know, None, create, None, create, None, create, create
+79, set_up, test, set_up, setup, set_up, setup, None, None, set_up, I don't know, None, set_up, None, set_up, None, set_up, set_up
+80, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+81, test_betainc, test, test_betainc, test_betainc, test_betainc, betainc, None, None, test_betainc, test, None, test, None, test, None, betainc, test_betainc
+82, init, init, init, init, init, array, None, None, init, init, None, init, None, window, None, init, set_up
+83, str, test, str, str, str, str, None, None, str, I don't know, None, str, None, str, None, str, str
+84, uniq, uniq, uniq, uniq, uniq, uniq, None, None, uniq, uniq, None, uniq, None, uniq, None, uniq, uniq
+85, exp, test, mul, test, exp, exp, None, None, exp, test, None, test, None, test, None, exp, specific_code_cpp
+86, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+87, set_up, test, set_up, set_up, set_up, call, None, None, set_up, test, None, set_up, None, set_up, None, set_up, set_up
+88, fixcommand, fixcommand, fixcommand, fixcommand, fixcommand, fixcommand, None, None, fixcommand, fixcommand, None, fix, None, fixcommand, None, fixcommand, fixcommand
+89, remove, remove, delete, unimport, delete, unimport, None, None, delete, I don't know, None, unimport, None, remove, None, unimport, exit
+90, test_huberThe code appears to be testing the huber loss function implementation by comparing it to manual calculations. The key things I noticed:, test, test_huber, test_huber, test, test, None, None, test_huberThe code appears to be testing the huber function from scipy.special by asserting equality between huber and a custom implementation xfunc, test_huber, None, test_huber, None, test, None, test_huber, test_huber
+91, setattr, init, set_up, init, setattr, init, None, None, setattr, init, None, init, None, init, None, init, init
+92, call, call, call, call, call, call, None, None, call, call, None, call, None, call, None, call, call
+93, str, init, str, str, str, str, None, None, str, init, None, str, None, str, None, str, str
+94, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+95, get, get, get, get, get, get, None, None, get, dispatch, None, get, None, get, None, get, get
+96, add, test, log, log, add, log, None, None, I don't know, I don't know, None, test, None, add, None, log, specific_code_cpp
+97, setattr, setattr, init, setattr, setattr, setattr, None, None, setattr, setattr, None, init, None, setattr, None, init, init
+98, append, append, visit_superscript, append, append, append, None, None, append, append, None, append, None, append, None, append, visit_superscript
+99, append, append, append, append, append, append, None, None, append, append, None, append, None, append, None, append, appendinterval
+100, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+101, init, init, init, init, init, init, None, None, init, init, None, init, None, write, None, init, init
+102, init, create, set_up, create, create, create, None, None, init, I don't know, None, set_up, None, create, None, create, set_up
+103, get_parser, get_parser, get_parser, get_parser, get_parser, get_parser, None, None, get_parser, get_parser, None, get_parser, None, get_parser, None, get_parser, get_parser
+104, init, login, init, init, init, init, None, None, init, init, None, get, None, init, None, init, enter
+105, test, print, get, test, get, get_queryset, None, None, get, print, None, test, None, get, None, get, test
+106, setattr, setattr, init, setattr, set_up, setattr, None, None, setattr, setattr, None, setattr, None, setattr, None, setattr, init
+107, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, try_merge
+108, test, test, test, test, test, get, None, None, test, I don't know, None, test, None, get, None, subscribe, test_fromelementsubscribewithoptionsempty
+109, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+110, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+111, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+112, encode, encode, encode, encode, encode, encode, None, None, encode, encode, None, encode, None, encode, None, encode, encodetemp
+113, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, for, test_rmse
+114, get_scheduledtaskid10, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get_scheduledtaskname10
+115, clone, clone, clone, clone, clone, clone, None, None, clone, clone, None, clone, None, clone, None, clone, clone
+116, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+117, predict, get, predict, predict, predict, get, None, None, get, I don't know, None, predict, None, predict, None, get, calculate_model_predictions
+118, tear_down, test, tear_down, tear_down, tear_down, tear_down, None, None, tear_down, test, None, tear_down, None, tear_down, None, tear_down, tear_down
+119, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+120, replace, edit, edit, replace, replace, replace, None, None, set_text, I don't know, None, replace, None, replace, None, replace, run
+121, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+122, init, init, init, init, set_up, setattr, None, None, init, init, None, init, None, init, None, init, init
+123, update, update, update, update, update, update, None, None, update, I don't know, None, update, None, update, None, update, update
+124, read, read, read, read, read, read, None, None, get, read, None, read, None, read, None, read, read
+125, put, write, write, write, write, put, None, None, put, put, None, write, None, put, None, write, output_unchecked
+126, add, init, init, init, init, add, None, None, init, init, None, init, None, add, None, init, set_up
+127, init, init, init, init, init, init, None, None, init, I don't know, None, init, None," ["" I don't know""]", None, init, init
+128, check, check, resetslice, resetslice, resetslice, check, None, None, resetslice, check, None, resetslice, None, check, None, check, call
+129, get, get, from_json, get, get, from_json, None, None, get, get, None, get, None, get, None, get, from_json
+130, parse_selinux, parse, parse_selinux, parse_selinux, parse_selinux, parse_selinux, None, None, parse_selinux, parse, None, parse, None, parse, None, parse, parse_selinux
+131, init, setattrThe code is using setattr to set attributes on the self object. It is setting self.field2 self.type self.table, init, setattr, init, setattr, None, None, init, init, None, init, None, init, None, setattr, init
+132, multiply, get, multiply, gmap, multiply, get, None, None, I don't know, I don't know, None," ["" I don't know""]", None, multiply, None, dot, gtvec
+133, dispatch, run, run, run, run, run, None, None, dispatch, I don't know, None, run, None, run, None, run, run
+134, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+135, parse, parse, parse, parse, parse, parse, None, None, parse, parse, None, parse, None, parse, None, parse, init
+136, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+137, init, init, create, init, create, init, None, None, init, init, None, init, None, init, None, init, init
+138, dispatch, dispatch, call, dispatch, dispatch, dispatch, None, None, dispatch, dispatch, None, call, None, call, None, call, call
+139, test, test, test, test, test, test, None, None, test, I don't know, None," ["" I don't know""]", None, test, None, Based on the provided code snippet I don't have enough context to choose a single word summary. The code appears to be loading data fitting a gradient boosted, test_gradientboostedbinaryclassificationexhaustivesplits
+140, validate, validate, validate, validate, validate, validate, None, None, validate, validate, None, validate, None, validate, None, validate, validate
+141, convert, print, toarray, convert, toarray, convert, None, None, convert, I don't know, None, toarray, None, convert, None, convert, uncompand
+142, init, test, init, init, init, init, None, None, init, I don't know, None, init, None, init, None, init, init
+143, sma, sma, calculate_model_predictions, init, calculate_model_predictions, init, None, None, calculate_model_predictions, init, None, init, None, update, None, init, init
+144, init, init, init, init, init, add, None, None, init, init, None, init, None, add, None, init, init
+145, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+146, create, create, create, create, create, tangible, None, None, create, create, None, create, None, create, None, create, create
+147, pass, init, init, start, call, do_start, None, None, init, init, None, init, None, do_start, None, start, test_dostart
+148, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+149, init, init, init, init, init, required, None, None, init, init, None, init, None, init, None, init, init
+150, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+151, main, loop, update, main, update, loop, None, None, loop, I don't know, None, main, None, update, None, I don't know, waitforkeypress
+152, init, init, init, init, setattr, init, None, None, init, init, None, init, None, get, None, init, init
+153, remove, remove, remove, remove, remove, remove, None, None, remove, remove, None, remove, None, remove, None, remove, tear_down
+154, setattr, init, init, init, setattr, setattr, None, None, setattr, init, None, init, None, set, None, init, init
+155, delitem, del, delitem, del, del, del, None, None, delitem, del, None, del, None, del, None, del, delitem
+156, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+157, drawbox, test, drawbox, drawbox, drawbox, add, None, None, drawbox, test, None, add, None, add, None, add, drawbox
+158, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+159, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+160, test_tc1floater, test_tc1floater, test_tc1floater, test_tc1floater, test_tc1floater, test_tc1floater, None, None, test_tc1floater, test_tc1floater, None, test_tc1floater, None, test_tc1floater, None, test_tc1floater, test_tc1floater
+161, test, parse, test, parsexml, parse_file, parsexml, None, None, parse_file, parse, None, parse, None, parse, None, parsexml, test_compile11
+162, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+163, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+164, immutable, error, immutable, immutable, immutable, immutable, None, None, immutable, init, None, immutable, None, init, None, immutable, setitem
+165, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+166, formatargvalues, error, format, init, format, init, None, None, formatargvalues, init, None, init, None, init, None, init, init
+167, get, dispatch, get, get, get, get, None, None, get, I don't know, None, get, None, get, None, init, init
+168, add, add, add, add, add, add, None, None, add, add, None, add, None, add, None, add, forwards
+169, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+170, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+171, setattr, get, set_up, set_up, set_up, init, None, None, setattr, I don't know, None, set, None, get, None, set_up, init
+172, test_notimplemented, test, test_notimplemented, raises, test_notimplemented, residue, None, None, test_notimplemented, test, None, test_notimplemented, None, residue, None, raises, test_notimplemented
+173, get_scheduledtaskid8, get, get, get, get, get_scheduledtaskid8, None, None, get, get, None, get, None, get, None, get, get_scheduledtaskid8
+174, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+175, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+176, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+177, read, remove, read, read, read, read, None, None, read, remove, None, read, None, read, None, read, read
+178, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, init, test_missingzopenamespace
+179, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+180, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+181, getargspec, getargspec, getargspec, getargspec, getargspec, getargspec, None, None, getargspec, getargspec, None, getargspec, None, getargspec, None, getargspec, getargspec
+182, test_withstatementundefinedinside, test, test, test, test, undefined, None, None, test_withstatementundefinedinside, test, None, test, None, test, None, undefined, test_withstatementundefinedinside
+183, parse_file, get_parser, get_parser, get_parser, get_parser, get_parser, None, None, get_parser, get_parser, None, get_parser, None, get_parser, None, get_parser, get_parser
+184, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_ol
+185, setattr, test, init, setattr, setattr, init, None, None, setattr, setattr, None, init, None, init, None, init, init
+186, ned, dispatch, parse_file, ned, parse, pos, None, None, ned, I don't know, None, ned, None, parse, None, pos, ned
+187, init, get, init, init, init, init, None, None, init, get, None, init, None, get, None, init, init
+188, get_parser, get_parser, get_parser, get_parser, get_parser, get_parser, None, None, get_parser, get_parser, None, get, None, get_parser, None, get_parser, get_parser
+189, set_up, test, set_up, set_up, init, init, None, None, set_up, test, None, set_up, None, set_up, None, set_up, set_up
+190, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+191, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+192, repr, repr, repr, repr, repr, repr, None, None, repr, repr, None, repr, None, repr, None, repr, repr
+193, tear_down, tear_down, tear_down, tear_down, tear_down, enqueue, None, None, tear_down, tear_down, None, tear_down, None, tear_down, None, enqueue, tear_down
+194, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+195, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+196, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+197, parse, parse_file, parse, parse_file, parse, parse, None, None, parse, parse_file, None, parse, None, parse, None, parse_file, parse_file
+198, eq, setattr, eq, eq, eq, same, None, None, eq, I don't know, None, eq, None," ["" I don't know""]", None, eq, eq
+199, visit_hlistcol, visit_hlistcol, error, raise, error, visit_hlistcol, None, None, visit_hlistcol, visit_hlistcol, None, error, None, error, None, raise, visit_hlistcol
+200, subset, subset, subset, join, subset, join, None, None, subset, subset, None, join, None, subset, None, subset, test_multidim
+201, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+202, create, create, create, create, create, create, None, None, create, I don't know, None, create, None, create, None, create, create
+203, setattrThe code is using setattr to set an attribute (method) on self and initialize another attribute (plugins) to an empty list. The one word, print, setattr, init, setattr, setattr, None, None, setattr, stop, None, init, None, init, None, init, init
+204, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+205, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+206, repr, print, repr, repr, repr, repr, None, None, repr, I don't know, None, repr, None, repr, None, repr, repr
+207, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+208, execute, execute, execute, execute, execute, execute, None, None, execute, execute, None, execute, None, execute, None, execute_file, open_file
+209, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+210, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+211, test, test, test, update, test, update, None, None, test, I don't know, None, test, None, update, None, init, set_up
+212, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, get
+213, getattr, parsexml, getattr, convert, get, return, None, None, getattr, parsexml, None, convert, None, return, None, convert, repr
+214, join, print, join, print, set_up, join, None, None, join, I don't know, None, write, None, write, None, join, init
+215, error, error, save, save, save, error, None, None, error, error, None, save, None, error, None, save, save
+216, test, test, test, test, residue, residue, None, None, test, test, None, test, None, residue, None, residue, test_basic1
+217, save, lock, unlock, lock, save, save, None, None, save, I don't know, None, save, None, save, None, save, save
+218, start, start, stop, stop, start, start, None, None, start, wait, None, wait, None, wait, None, wait, exit
+219, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+220, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+221, formatargvalues, write, format, print, get, write, None, None, formatargvalues, write, None, write, None, write, None, write, repr
+222, close, close, close, close, close, close, None, None, close, close, None, close, None, close, None, close, close
+223, init, dispatch, set_up, set_up, set_up, set, None, None, init, I don't know, None, set_up, None, set, None, set, init
+224, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+225, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+226, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+227, init, init, init, init, pack, init, None, None, init, I don't know, None, init, None, init, None, init, init
+228, update, update, update, init, update, update, None, None, update, update, None, create, None, init, None, init, init
+229, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+230, test_nbdtrin, test, test, test, test_nbdtrin, test_nbdtrin, None, None, test_nbdtrin, test, None, test, None, test, None, test_nbdtrin, test_nbdtrin
+231, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+232, test_pdtr, test, test, test_pdtr, test, pdtr, None, None, test_pdtr, test, None, test, None, pdtr, None, test_pdtr, test_pdtr
+233, add, add, add, add, add, add, None, None, add, init, None, add, None, add, None, add, init
+234, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+235, screensize, resize, resize, resize, resize, resize, None, None, screensize, I don't know, None, resize, None, resize, None, screensize, screensize
+236, set, set, update, update, set, set, None, None, set, set, None, set, None, set, None, setitem, add
+237, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+238, get, get, get, get, get, get, None, None, get, I don't know, None, get, None, get, None, get, get_ephemerals
+239, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, None, None, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes, None, test_sendrequestbodyfinishedearlythentoomanybytes, None, test_sendrequestbodyfinishedearlythentoomanybytes, None, test_sendrequestbodyfinishedearlythentoomanybytes, test_sendrequestbodyfinishedearlythentoomanybytes
+240, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_missing2
+241, init, init, error, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+242, iterate, parsexml, count, parsexml, count, counter, None, None, iterate, parsexml, None, parsexml, None, parsexml, None, init, init
+243, test, test, test, test, test, undefined, None, None, test, test, None, test, None, test, None, init, test_offsetindoctests
+244, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_genrandbits
+245, test, test, test_receivedgroupchat, test_receivedgroupchat, test_receivedgroupchat, test, None, None, test, I don't know, None, test_receivedgroupchat, None, test_receivedgroupchat, None, test_receivedgroupchat, test_receivedgroupchat
+246, setattr, set_up, set_up, init, setattr, setattr, None, None, setattr, setattr, None, set_up, None, set_up, None, setattr, init
+247, init, init, set_up, set_up, set_up, set_up, None, None, init, init, None, set_up, None, set_up, None, set_up, set_up
+248, paste, paste, paste, paste, paste, paste, None, None, paste, paste, None, paste, None, paste, None, paste, pastetint
+249, stop, stop, stop, stop, stop, stop, None, None, stop, stop, None, stop, None, stop, None, stop, stop
+250, start, update, start, start, update, update, None, None, start, update, None, start, None, update, None, start, start
+251, setattr, set, setattr, init, setattr, setattr, None, None, setattr, set, None, init, None, set, None, init, init
+252, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+253, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+254, init, set, set_up, set, set_up, set, None, None, init, set, None, set, None, set, None, setitem, init
+255, setattr, setattr, init, setattr, init, setattr, None, None, init, setattr, None, init, None, setattr, None, setattr, init
+256, init, test, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+257, init, init, set_up, set_up, set_up, init, None, None, init, init, None, set_up, None, init, None, set_up, set_up
+258, init, print, init, print, append, disassemble, None, None, init, print, None, print, None, get, None, init, init
+259, convert, convert, convert, convert, convert, convert, None, None, convert, I don't know, None, convert, None, convert, None, convert, getconv
+260, clone, get, copy, clone, copy, copy, None, None, clone, get, None, get, None," ["" I don't know""]", None, clone, deannotate
+261, put, parse_file, write, put, write, parsexml, None, None, init, I don't know, None, write, None, write, None, put, init
+262, formatargvalues, print, str, print, str, return, None, None, formatargvalues, I don't know, None, print, None, return, None, str, repr
+263, variance, variance, variance, variance, variance, variance, None, None, variance, variance, None, variance, None, variance, None, variance, variance
+264, update, put, put, put, update, put, None, None, put, I don't know, None, put, None, put, None, put, put
+265, test, test, test, test, test, load, None, None, test, test, None, test, None, load, None, test, test_egg2
+266, get, test, get, print, get, return, None, None, get, test, None, print, None, get, None, return, get
+267, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+268, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+269, format, formatThe given code snippet appears to be formatting and converting arguments and values into strings to generate a formatted argument spec. The key aspects that point to ', format, formatargvaluesThe code appears to be formatting argument values by calling various formatting functions on the argument names and values. The key functions are formatarg, format, format, None, None, formatThe given code snippet appears to be formatting a set of arguments into a string for output. The key aspects that point to 'format' being a, formatThe code appears to be formatting arguments and values into strings to generate a spec. The key aspects that point to this are:- It, None, format, None, format, None, formatargvalues, formatargvalues
+270, setattr, init, set_up, init, setattr, init, None, None, setattr, init, None, init, None, init, None, init, init
+271, set_up, set_up, set_up, set_up, init, init, None, None, init, init, None, set_up, None, init, None, init, set_up
+272, heightmap_lerp_hm, heightmap_lerp_hm, heightmap_lerp_hm, lerp_hm, heightmap_lerp_hm, heightmap_lerp_hm, None, None, lerp_hm, heightmap_lerp_hm, None, lerp_hm, None, lerp_hm, None, lerp_hm, heightmap_lerp_hm
+273, write, write, write, write, write, write, None, None, write, write, None, write, None, write, None, write, write
+274, test_setupThe given code appears to be setting up a test case by initializing variables patching dependencies configuring the system under test and preparing, test, test, set_up, test, init, None, None, init, I don't know, None, test, None, test, None, init, set_up
+275, test, test_md5sesshasha2authint, test, test_md5sesshasha2authint, test, test_md5sesshasha2authint, None, None, test, test_md5sesshasha2authint, None, test, None, test, None, test_md5sesshasha2authint, test_md5sesshasha2authint
+276, setattr, print, setattr, print, setattr, setattr, None, None, setattr, I don't know, None, print, None, write, None, init, init
+277, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+278, polytrafo, test, test, poly, polytrafo, poly, None, None, polytrafo, poly, None, test, None, poly, None, poly, test_simple3
+279, init, init, set_up, init, set_up, setattr, None, None, init, set, None, set_up, None, set, None, set, init
+280, setattr, setattr, setattr, setattr, setattr, setattr, None, None, setattr, setattr, None, setattr, None, setattr, None, setattr, setattr
+281, iterate, iterate, sum, factorial, sum, iterate, None, None, iterate, I don't know, None, iterate, None," ["" I don't know""]", None, iter, bell
+282, cleanpending, cleanpending, clean, cleanpending, clean, cleanpending, None, None, clean, I don't know, None," ["" I don't know.""]", None," ["" I don't know""]", None, init, test_cleanpendingreturnsdelayedcallstrings
+283, get_basedir, get_basedir, get, get_basedir, get, get_basedir, None, None, get_basedir, get_basedir, None, get, None, get, None, get_basedir, get_basedir
+284, close, close, close, close, close, close, None, None, close, I don't know, None, close, None, close, None, close, close
+285, set_zorder, reorder, set_zorder, reorder, set_zorder, reorder, None, None, set_zorder, zorder, None, set_zorder, None, reorder, None, reorder, set_zorder
+286, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+287, toordinal, toordinal, toordinal, toordinal, toordinal, toordinal, None, None, toordinal, toordinal, None, toordinal, None, toordinal, None, toordinal, toordinal
+288, get, parse_file, get, get, get, get, None, None, parse, I don't know, None," ["" I don't know""]", None, get, None, get, try_merge
+289, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+290, get, repr, get, repr, get, render, None, None, get, repr, None, repr, None, repr, None, repr, unicode
+291, get_scheduledaction10, get, get, get_scheduledaction10, get, get_scheduledaction10, None, None, get, get, None, get, None, get, None, get, get_scheduledaction10
+292, visit_copyright, visit_copyright, visit_copyright, visit_copyright, visit_copyright, visit_copyright, None, None, visit_copyright, visit_copyright, None, visit_copyright, None, visit_copyright, None, visit_copyright, visit_copyright
+293, get, get, predict, predict, predict, get, None, None, get, I don't know, None," ["" I don't know""]", None, get, None, Based on the given code snippet I don't have enough context to choose a single word that accurately summarizes it. The code appears to be doing some mathematical, calculate_model_predictions
+294, exp, test, exp, test, exp, keystoneclient, None, None, exp, test, None, test, None, keystoneclient, None, init, specific_code_cpp
+295, polytrafo, polytrafoThe code snippet appears to be transforming (polytrafo) a polygon (poly) by applying a series of transformations based on position, transform, polytrafo, transform, polytrafo, None, None, polytrafo, I don't know, None, transform, None, transform, None, polytrafo, polytrafo
+296, testThe code snippet appears to be testing different modes of downsample_factor_max_grad asserting on the type of gradient operation (max pool grad, testThe given code snippet appears to be testing different downsample factor and max gradient configurations for a Theano function. It checks which gradient operation (max pool, test, test, test_downsamplefactormaxgrad, test, None, None, testThe code appears to be testing different modes of downsample_factor_max_grad asserting the type of gradient operation (max_pool_grad, test, None, test, None, test, None, test, test_downsamplefactormaxgrad
+297, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+298, init, test, offset, init, getoffset, fixedoffset, None, None, init, I don't know, None, init, None, init, None, init, repr
+299, get, get, get, raise, get, get, None, None, get_file, I don't know, None, raise, None, get, None, raise, get_file
+300, set_up, test, set_up, set_up, set_up, set_up, None, None, set_up, set_up, None, set_up, None, set_up, None, set_up, set_up
+301, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+302, notifyremote, notifyremote, test_notifyremote, notifyremote, notifyremote, notifyremote, None, None, notifyremote, notifyremote, None, test_notifyremote, None, notify, None, notifyremote, test_notifyremote
+303, specialize, specialize, specialize, specialize, specialize, specialize, None, None, specialize, I don't know, None, specialize, None, create, None, specialize, specialize
+304, test_addrsaidentitywithcomment, test, test, test, add, add, None, None, add, testThe code appears to be testing the add_identity method of an ssh agent client by adding an identity with a comment and then verifying that, None, add, None, add, None, add, test_addrsaidentitywithcomment
+305, formatargvalues, formatargvalues, format, print, get, get, None, None, formatargvalues, formatargvalues, None, print, None, get, None, init, str
+306, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+307, toarray, convert, toarray, toarray, toarray, toarray, None, None, toarray, I don't know, None, toarray, None, get, None, toarray, toarray
+308, get, get_additional_model_predictions, predict, get, predict, get, None, None, get, I don't know, None, predict, None," ["" I don't know""]", None, get_additional_model_predictions, calculate_model_predictions
+309, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+310, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+311, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+312, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+313, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+314, add, cache, add, add, add, setdefault, None, None, add, I don't know, None, add, None, setdefault, None, append, add
+315, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+316, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, set_up
+317, init, init, init, init, set_up, init, None, None, init, init, None, init, None, set_up, None, init, init
+318, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+319, init, print, init, init, init, init, None, None, init, I don't know, None, init, None, init, None, init, init
+320, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+321, showcontents, showcontents, show, show, show, show, None, None, show, show, None, show, None, show, None, show, imshow
+322, remove, remove, remove, remove, remove, remove, None, None, remove, remove, None, remove, None, remove, None, remove, remove
+323, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+324, append, init, read, append, merge, merge, None, None, append, I don't know, None, read, None, merge, None, merge, init
+325, add, init, set_up_class, init, set_up_class, add, None, None, init, init, None, set_up_class, None, add, None, init, set_up_class
+326, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+327, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+328, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+329, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+330, orth, orth, orth, orth, orth, orth, None, None, orth, I don't know, None, orth, None," ["" I don't know""]", None, orth, orth
+331, get, get_additional_model_predictionsThe given code snippet appears to be implementing a method to get additional model predictions by computing a mathematical expression involving the input, predict, get_additional_model_predictions, get, get, None, None, get, I don't know, None, get, None," ["" I don't know""]", None, I don't know, calculate_model_predictions
+332, test_endpointlistenfailure, test_endpointlistenfailure, test_endpointlistenfailure, test_endpointlistenfailure, test_endpointlistenfailure, errback, None, None, test_endpointlistenfailure, I don't know, None, test, None," ["" I don't know""]", None, init, test_endpointlistenfailure
+333, frexp, frexp, split, frexp, frexp, frexp, None, None, frexp, frexp, None, frexp, None, frexp, None, frexp, frexp
+334, test, test, test, test, test, unsubscribe, None, None, test, test, None, test, None, unsubscribe, None, test, test_fromelementunsubscribenojid
+335, dispatch, testThe code appears to be testing the functionality of a task runner class by creating some sample tasks initializing a runner running the tasks and asserting, test, test, run, run, None, None, dispatch, test, None, test, None, run, None, run, test_getargs
+336, len, len, len, len, len, len, None, None, len, len, None, len, None, len, None, len, len
+337, create, create, create, create, create, ship, None, None, create, create, None, create, None, create, None, create, create
+338, init, init, init, iter, init, init, None, None, init, init, None, init, None, init, None, iter, init
+339, save, save, save, save, save, save, None, None, save, save, None, save, None, save, None, save, save
+340, parse_file, parse_file, read, get, get, get, None, None, parse, I don't know, None, read, None, get, None, get, try_merge
+341, register, register, register, register, register, register, None, None, register, register, None, register, None, register, None, register, error
+342, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+343, test_sslchainfilemustcontaincert, test, test, test_sslchainfilemustcontaincert, test, test_sslchainfilemustcontaincert, None, None, test_sslchainfilemustcontaincert, test, None, test, None, validate, None, test_sslchainfilemustcontaincert, test_sslchainfilemustcontaincert
+344, init, init, set_up, init, init, init, None, None, init, init, None, set_up, None, set_up, None, init, init
+345, get, get, get, getattr, get, getattr, None, None, get, get, None, get, None, get, None, getattr, getattr
+346, formatargvalues, get, get, get, get, get, None, None, formatargvalues, I don't know, None, get, None, get, None, get, str
+347, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+348, init, init, init, init, init, init, None, None, init, I don't know, None, init, None, init, None, init, init
+349, get, parse_file, get, get, get, get, None, None, get, parse, None, get, None, get, None, get, getfield
+350, close, close, close, close, close, close, None, None, close, close, None, close, None, close, None, close, close
+351, error, error, error, init, init, init, None, None, error, error, None, init, None, init, None, init, init
+352, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+353, uniq, hierarchyThe code snippet appears to be arranging a list of classes into a hierarchy or nested structure based on their inheritance relationships. The key aspects are:, arrange, hierThe code appears to be arranging the given classes into a hierarchy by traversing the class inheritance relationships. The key aspects are:- Builds, arrange, walktree, None, None, I don't know, I don't know, None," ["" I don't know""]", None," ["" I don't know""]", None, Based on the given code snippet I don't have enough context to choose a single word summary. The code seems to be implementing some sort of class hierarchy, getclasstree
+354, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+355, init, init, create, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+356, exp, test, exp, test, exp, exp, None, None, exp, test, None, test, None," ["" I don't know""]", None, exp, specific_code_cpp
+357, read, read, read, read, read, read, None, None, read, read, None, read, None, read, None, read, read
+358, tear_down, test, tear_down, tear_down, test, tear_down, None, None, tear_down, test, None, tear_down, None, tear_down, None, tear_down, tear_down
+359, predict, get_additional_model_predictionsThe given code snippet appears to be implementing a method to get additional model predictions by taking in data cache dictionary, predict, get, predict, get, None, None, get, Based on the code snippet provided I don't have enough context to confidently summarize it with a single word. More context about what the overall goal of the, None, get, None, get, None, get, calculate_model_predictions
+360, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_untls
+361, mul, print, mul, print, mult, s, None, None, I don't know, print, None, print, None, add, None, add, specific_code_cpp
+362, init, init, init, init, init, setattr, None, None, init, init, None, init, None, set_up, None, init, init
+363, repr, repr, repr, repr, repr, repr, None, None, repr, repr, None, repr, None, repr, None, repr, repr
+364, setattr, setattrThe code is setting an attribute on an object. The key lines are:- c_data.setattr(self name value, setattr, setattr, setattr, setattr, None, None, setattr, I don't know, None, set, None," ["" I don't know""]", None, setattr, setattr
+365, setattr, setattr, set_up, init, setattr, set, None, None, init, set, None, init, None, set_up, None, init, init
+366, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, tear_down
+367, stripresource, stripresource, strip, stripresource, strip, stripresource, None, None, stripresource, stripresource, None, strip, None, strip, None, stripresource, stripresource
+368, init, init, init, init, init, setattr, None, None, init, init, None, init, None, init, None, init, init
+369, len, len, len, len, len, len, None, None, len, len, None, len, None, len, None, len, len
+370, parse_file, dispatch, parse_file, parse, parse, match, None, None, parse, parse_file, None, parse, None, parse_file, None, parse_file, init
+371, pound, parsexml, formatargvalues, parsexml, formatargvalues, parsexml, None, None, pound, parsexml, None, parsexml, None, parse, None, parsexml, pound
+372, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+373, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, test, test_paranthesis
+374, init, print, init, init, init, setattr, None, None, init, print, None, init, None, set_up, None, init, init
+375, setattr, setattr, setattr, setattr, setattr, setattr, None, None, setattr, setattr, None, set, None, set, None, setattr, init
+376, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+377, decode, test, decode, test, decode, decode, None, None, decode, testThe code appears to be testing functionality related to decoding credentials and validating the username field. It is raising custom exceptions and asserting on expected error cases., None, test, None, raise, None, raises, test_nousername
+378, init, init, set_up, set_up, init, set_up, None, None, init, init, None, set_up, None, set_up, None, init, set_up
+379, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+380, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+381, waitforkeypress, test, waitforkeypress, print, waitforkeypress, return, None, None, init, I don't know, None, print, None," ["" I don't know""]", None, return, get
+382, heal, heal, heal, heal, heal, damage, None, None, heal, I don't know, None, heal, None, heal, None, damage, heal
+383, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+384, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+385, init, test, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+386, init, print, init, init, init, init, None, None, init, print, None, init, None, init, None, init, init
+387, alter, alter, alter, alter, alter, alter, None, None, alter, init, None, alter, None, alter, None, alter, backwards
+388, init, test, test, init, init, init, None, None, init, init, None, init, None, init, None, init, set_up
+389, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+390, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+391, init, init, error, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+392, set, setattr, set_up, setattr, set, get, None, None, set_up, setattr, None, get, None, get, None, set, init
+393, gmap, run, run, run, run, run, None, None, I don't know, Based on the given code snippet I would summarize it with the word 'run'. The code appears to be parsing command line arguments validating inputs constructing a, None, run, None, run, None, gmap, gmap
+394, borrowdoc, borrowdocThe code defines a borrowdoc decorator that can be used to borrow a docstring from another method usually a parent class method. The key aspects, borrowdoc, borrowdoc, borrowdoc, borrowdoc, None, None, I don't know, I don't know, None, borrowdoc, None, borrowdoc, None, borrowdoc, borrowdoc
+395, test_seedcorrelationanalyzer, test, test, test_seedcorrelationanalyzer, test, test_seedcorrelationanalyzer, None, None, test_seedcorrelationanalyzer, test, None, test, None, test, None, test_seedcorrelationanalyzer, test_seedcorrelationanalyzer
+396, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+397, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+398, setattrThe code is setting an attribute on self called related to the value of the related parameter. So setattr summarizes the overall action of the code., setattr, setattr, get, setattr, get, None, None, setattr, I don't know, None, get, None, get, None, index, init
+399, test, test, test, test, import, import, None, None, init, test, None, test, None, import, None, import, set_up
+400, outport, test, outport, outport, outport, outport, None, None, outport, I don't know, None, print, None, outport, None, outport, outport
+401, test, test, test, test, test, test, None, None, test, test, None, test, None, test, None, init, test_assigninforloop
+402, clone, init, clone, init, clone, hostlist, None, None, clone, I don't know, None, get, None," ["" I don't know""]", None, return, hostlist
+403, formatargvalues, iterate, formatargvalues, iterate, iterate, iterate, None, None, formatargvalues, I don't know, None, iterate, None, iterate, None, iterate, str
+404, init, init, create, create, create, init, None, None, init, init, None, create, None, init, None, create, init
+405, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+406, filter, filter, get, filter, filter, filter, None, None, filter, filter, None, filter, None, filter, None, filter, get_queryset
+407, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+408, validate, validate, validate, order, validate, get_order, None, None, validate, I don't know, None, validate, None, validate, None, order, s2o
+409, init, setattr, create, init, init, setattr, None, None, init, init, None, set_up, None, init, None, init, init
+410, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+411, repr, repr, repr, repr, repr, disasm, None, None, repr, repr, None, repr, None, disasm, None, disassemble, str
+412, init, test, test, init, get, setup, None, None, I don't know, I don't know, None," ["" I don't know""]", None, get, None, init, run
+413, iter, iterate, iterate, iter, iterate, yield, None, None, iter, iter, None, iterate, None, iterate, None, yield, iter
+414, run, main, run, run, run, run, None, None, run, I don't know, None, run, None, run, None, run, main
+415, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+416, init, init, init, init, init, init, None, None, init, init, None, init, None, set_up, None, init, init
+417, set_up, set, set_up, set_up, set_up, related, None, None, set_up, set, None, get, None, set_up, None, set_up, init
+418, get, get, test, get, get, get, None, None, get, get, None, get, None, get, None, get, getsessionprob
+419, get_context_data, get_context_data, get_context_data, get_context_data, get, get_context_data, None, None, get, get_context_data, None, get, None, get_context_data, None, get_context_data, get_context_data
+420, tear_down, tear_down, tear_down, tear_down, tear_down, tear_down, None, None, tear_down, tear_down, None, tear_down, None, tear_down, None, tear_down, tear_down
+421, get, get, get, toip, get, sipcalc, None, None, get, test, None, shift, None, add, None, toip, irshift
+422, init, test, init, init, init, init, None, None, init, init, None, init, None, init, None, init, set_up
+423, init, init, create, init, define, init, None, None, I don't know, I don't know, None, init, None, init, None, I don't know, new
+424, formatargvalues, test, formatargvalues, write, formatargvalues, write, None, None, formatargvalues, write, None, write, None, write, None, write, unicode
+425, set_up, set_up, set_up, set, set_up, set, None, None, set, set, None, set, None, set_up, None, set_up, init
+426, test, test, test, test, test, test_containment, None, None, test, test, None, test, None, test, None, test_containment, test_containment
+427, test_ker, print, test_ker, test, test, test, None, None, test_ker, print, None, test, None, test, None, test_ker, test_ker
+428, create, create, create, create, create, building, None, None, create, build, None, create, None, create, None, create, create
+429, setattr, init, create, init, setattr, setattr, None, None, setattr, init, None, create, None, setattr, None, setattr, init
+430, setattr, setattr, set, setattr, set, setattr, None, None, set, setattr, None, set_up, None, set, None, set, init
+431, repr, repr, repr, repr, repr, repr, None, None, repr, repr, None, repr, None, repr, None, repr, repr
+432, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+433, init, test, init, init, init, init, None, None, init, test, None, init, None, init, None, init, init
+434, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+435, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+436, test_stoponfirsterror, stop, test_stoponfirsterror, test_stoponfirsterror, test_stoponfirsterror, stop, None, None, test_stoponfirsterror, stop, None, test_stoponfirsterror, None, test, None, stop, test_stoponfirsterror
+437, append, init, init, init, init, append, None, None, append, init, None, append, None, append, None, append, init
+438, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, delete
+439, setattr, if, set_up, setattr, setattr, setattr, None, None, setattr, setattr, None, setattr, None, setattr, None, setattr, init
+440, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+441, test_shahashresponseextra, test_md5hashresponseextra, test, test_md5hashresponseextra, hash, test_md5hashresponseextra, None, None, test_shahashresponseextra, test_md5hashresponseextra, None, test, None, test_shahashresponseextra, None, hash, test_shahashresponseextra
+442, close, close, close, close, close, close, None, None, close, close, None, close, None, close, None, close, exit
+443, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+444, init, get, init, get, init, retrieve, None, None, init, get, None, get, None, get, None, get, init
+445, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+446, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+447, init, init, init, init, init, init, None, None, init, init, None, set_up, None, init, None, init, init
+448, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+449, get_queryset, get_queryset, get_queryset, get_queryset, get_queryset, get_queryset, None, None, get_queryset, get_queryset, None, get_queryset, None, get_queryset, None, get_queryset, get_queryset
+450, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+451, setattr, setattr, write, write, write, setattr, None, None, I don't know, write, None, write, None, write, None, set_up, init
+452, init, init, init, init, init, maxsize, None, None, init, I don't know, None, init, None, init, None, init, init
+453, init, init, init, init, init, count, None, None, init, init, None, init, None, get, None, init, init
+454, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+455, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+456, init, print, init, print, init, disassemble, None, None, init, print, None, print, None, get, None, init, init
+457, formatargvalues, get, create, get, get, template, None, None, formatargvalues, template, None, get, None, template, None, get, repr
+458, formatargvalues, print, str, print, str, write, None, None, formatargvalues, print, None, write, None, write, None, write, unicode
+459, set_up, set_upThe given code snippet appears to be setting up objects and data that will be used later for testing purposes. The key aspects are:, set_up, set_up, init, init, None, None, init, init, None, init, None, init, None, set_up, set_up
+460, repr, repr, repr, repr, repr, repr, None, None, repr, I don't know, None, repr, None, repr, None, repr, repr
+461, get, print, get, get, get, get, None, None, get, test, None, get, None, get, None, get, get
+462, minpore, setattr, set, setattr, set, minpore, None, None, I don't know, I don't know, None," ["" I don't know""]", None," ["" I don't know""]", None, Based on the provided code snippet I don't have enough context to choose a single word summary. The code seems to be calculating a throat diameter value based on, minpore
+463, write, write, write, write, write, setattr, None, None, add, write, None, write, None, write, None, write, test_writeaddstimestamp
+464, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+465, add, add, test, add, add, add, None, None, add, add, None, add, None, add, None, add, test_weight2
+466, init, init, create, init, init, init, None, None, init, init, None, create, None, init, None, init, init
+467, init, load, load, load, load, load, None, None, init, load, None, load, None, load, None, init, init
+468, wrap, get, wrap, wrap, wrap, wrap, None, None, wrap, I don't know, None, wrap, None, wrap, None, wrap, convert
+469, create, get, create, create, create, create, None, None, create, I don't know, None, create, None, create, None, create, create
+470, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+471, init, init, create, init, create, init, None, None, init, I don't know, None," ["" I don't know""]", None, create, None, init, new
+472, close, close, close, close, close, close, None, None, close, I don't know, None," ["" I don't know""]", None, close, None, close, close
+473, create, create, create, create, create, create, None, None, create, create, None, create, None, create, None, create, create
+474, ignore, ignore, test, test_presence, ignore, ignore, None, None, ignore, ignore, None, test, None, ignore, None, test_presence, test_unavailablereceivednotinroom
+475, delete, delete, delete, delete, delete, delete, None, None, delete, delete, None, delete, None, delete, None, delete, backwards
+476, init, parse_file, parse_file, init, parse_file, filter, None, None, init, init, None, parse_file, None, parse_file, None, run, set_up
+477, showcontents, showcontents, showcontents, showcontents, showcontents, showcontents, None, None, showcontents, showcontents, None, showcontents, None, showcontents, None, showcontents, showcontents
+478, repr, iterate, str, repr, str, iterate, None, None, iterate, iterate, None, str, None, iterate, None, append, str
+479, init, append, init, append, init, append, None, None, init, append, None, append, None, append, None, append, init
+480, len, len, len, len, len, len, None, None, len, len, None, len, None, len, None, len, len
+481, eq, eq, eq, eq, eq, eq, None, None, eq, eq, None, eq, None, eq, None, eq, eq
+482, initscr, initscr, initscr, initscr, initscr, initscr, None, None, initscr, initscr, None, initscr, None, initscr, None, initscr, initscr
+483, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+484, init, test, create, init, init, init, None, None, init, I don't know, None, init, None, init, None, init, set_up
+485, setattr, print, setattr, print, setattr, init, None, None, setattr, print, None, print, None, init, None, init, init
+486, jacobian, jacobian, jacobian, jacobian, jacobian, jacobian, None, None, jacobian, I don't know, None, jacobian, None, jacobian, None, jacobian, linearize
+487, remove, rmtree, remove, rmtree, remove, rmtree, None, None, remove, I don't know, None, delete, None, delete, None, rmtree, tear_down
+488, get_queryset, get_queryset, get_queryset, get_queryset, get_queryset, get_queryset, None, None, get_queryset, get_queryset, None, get_queryset, None, get_queryset, None, get_queryset, get_queryset
+489, init, get, get, get, init, get_vcs, None, None, init, get, None, get, None, get, None, get, init
+490, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+491, cythonize, cythonize, cythonize, cythonize, cythonize, cythonize, None, None, cythonize, cythonize, None, cythonize, None, cythonize, None, cythonize, run
+492, init, append, init, init, init, similarity, None, None, init, init, None, init, None, similarity, None, init, set_up
+493, get, test, test, get, get, parsexml, None, None, get, parse, None, get, None, get, None, get, test_hostvars
+494, get, get, predict, predict, predict, get, None, None, get, I don't know, None, predict, None, fit, None, get, calculate_model_predictions
+495, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
+496, test, test, test, test, test, patch, None, None, init, test, None, test, None, test, None, patch, set_up
+497, get, get, get, get, get, get, None, None, get, get, None, get, None, get, None, get, set_up
+498, set_up, set_up, set_up, set_up, set_up, set_up, None, None, set_up, set_up, None, set_up, None, set_up, None, set_up, set_up
+499, init, init, init, init, init, init, None, None, init, init, None, init, None, init, None, init, init
