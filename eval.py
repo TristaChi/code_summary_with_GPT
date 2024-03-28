@@ -83,7 +83,6 @@ if __name__ == '__main__':
 
     bool_data, idk_data = get_data(file=csv_file_path,ignore_first_line=False)
 
-
     print('src	adv	src_w_fsd_response	adv_w_fsd_response	src_w_pd_response	adv_w_pd_response')
     print(count_match(get_list(i1=True),bool_data))
     print(count_match(get_list(i1=True,i2=True),bool_data))
