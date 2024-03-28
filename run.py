@@ -4,13 +4,12 @@ import run_GPT
 import openai
 import threading
 from threading import Thread
+import argparse 
 
 
-file_name = '[direction to result file]'
-data_dir = '[directoin to data]'
-use_GPT = True
 
-def rerun_program(stop_event):
+
+def rerun_program(stop_event,file_name,data_dir,use_GPT):
     try:
         with open(file_name, 'r') as f:
             line_count = sum(1 for _ in f)
@@ -29,7 +28,7 @@ def rerun_program(stop_event):
                     bag_size = 500,
                     file_name = file_name,
                     new_sample = True,
-                    use_GPT = True
+                    use_GPT = use_GPT,
                     )
         # Periodically check if stop_event is set, and exit if it is
         if stop_event.is_set():
@@ -38,7 +37,7 @@ def rerun_program(stop_event):
         print(f"Error encountered: {e}")
 
 
-def main():
+def main(file_name, data_dir, use_GPT):
     if not os.path.exists(file_name):
         with open(file_name, 'w') as f:
             f.write('index, src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt \n')
@@ -54,7 +53,7 @@ def main():
 
         try:
             stop_event.clear()
-            thread = threading.Thread(target=rerun_program, args=(stop_event,))
+            thread = threading.Thread(target=rerun_program, args=(stop_event,file_name,data_dir,use_GPT))
             thread.start()
             thread.join(timeout=80)
             if thread.is_alive():
@@ -70,4 +69,10 @@ def main():
         time.sleep(30)
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser() 
+    parser.add_argument('--file_name', type=str, default='/gpt-4_result/gpt4', help='result file name')
+    parser.add_argument('--data_dir', type=str, default='data/data.tsv', help='directoin to data')
+    parser.add_argument('--use_GPT', type=str, default='gpt4', help='use GPT 4 or 3.5')
+
+    args = parser.parse_args()
+    main(file_name=args.file_name, data_dir=args.data_dir, use_GPT=args.use_GPT)

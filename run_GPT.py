@@ -33,7 +33,7 @@ def get_response(chatbot,
                 temperature=0,
                 top_p=1.0,
                 few_shot_defense=False, 
-                use_GPT=35,
+                use_GPT='gpt4',
                 max_tokens=10):
     prompt = prompt.format(dict)+input
         
@@ -72,7 +72,7 @@ def read_file(data_dir,randomly_pick,dict_size=100,bag=0,picked=[]):
     print('dict_size',len(tgt_dict))
     return index_n,src_n,tgt_n,adv_n,tgt_dict
 
-def run_GPT_dif_cases(chatbot,src_r,adv_r,tgt_r,tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=35):
+def run_GPT_dif_cases(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT='gpt4'):
     # Please comment out the cases not need for experiment for efficiency
 
     src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response = '','','','','','','',''
@@ -170,7 +170,7 @@ def run_GPT_dif_cases(chatbot,src_r,adv_r,tgt_r,tgt_dict,prompt,prompt_w_d,tempe
 
     return src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt_r.replace(' ', '_')
 
-def run_GPT_dif_cases_new(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT=35):
+def run_GPT_meta_d(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT='gp4'):
     # Please comment out the cases not need for experiment for efficiency
 
     src_response, adv_response, src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response = '','','','','',''
@@ -194,67 +194,26 @@ def run_GPT_dif_cases_new(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_G
 
 
     print('-------- src w/ self_d_1 ---------')
-    src_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1,
+    src_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_EBMP,
                 few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('src w/ self_d_1',src_w_self_d_1_response)
 
     print('-------- adv w/ self_d_1 ---------')
-    adv_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1,
+    adv_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_EBMP,
                 few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('adc w/ self_d_1',adv_w_self_d_1_response)
 
     print('-------- src w/ self_d_2 ---------')
-    src_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2,
+    src_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_PAMP,
                 few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('src w/ self_d_2',src_w_self_d_2_response)
 
     print('-------- adv w/ self_d_2 ---------')
-    adv_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2,
+    adv_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_PAMP,
                 few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)[0]
     print('adc w/ self_d_2',adv_w_self_d_2_response)
 
     return src_response, adv_response, src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response, tgt_r
-
-def run_GPT_plain(chatbot,src_r,adv_r,tgt_r,tgt_dict,temperature=0,use_GPT=True,max_tokens=10):
-
-    # print('-------- src ---------')
-    # # print('src code:',src_r)
-    # src_response = get_response(chatbot, src_r, tgt_dict, prompt,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('src response',src_response)
-
-    # print('-------- adv ---------')
-    # # print('adv code:',adv_r)
-    # adv_response = get_response(chatbot, adv_r, tgt_dict, prompt,
-    #             few_shot_defense=False, use_GPT=use_GPT, temperature=temperature)
-    # print('adv response',adv_response)
-
-    print('-------- src w/ self_d_1 ---------')
-    src_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1_p,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
-    print('src w/ self_d_1',src_w_self_d_1_response)
-
-    print('-------- adv w/ self_d_1 ---------')
-    adv_w_self_d_1_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d1_p,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
-    print('adc w/ self_d_1',adv_w_self_d_1_response)
-
-    print('-------- src w/ self_d_2 ---------')
-    src_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2_p,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
-    print('src w/ self_d_2',src_w_self_d_2_response)
-
-    print('-------- adv w/ self_d_2 ---------')
-    adv_w_self_d_2_response = get_response(chatbot, src_r, tgt_dict, prompt_self_d2_p,
-                few_shot_defense=False, use_GPT=use_GPT, temperature=temperature, max_tokens=max_tokens)
-    print('adc w/ self_d_2',adv_w_self_d_2_response)
-
-   
-    print('-------- tgt ---------')
-    print('tgt code:',tgt_r.replace(' ', '_'))
-
-
-    return src_w_self_d_1_response, adv_w_self_d_1_response, src_w_self_d_2_response, adv_w_self_d_2_response, tgt_r.replace(' ', '_')
 
 def save_picked_idx(file_name,picked):
     np.save(file_name+'_idx', picked)
@@ -277,13 +236,13 @@ def load_dict(file_name):
 
 def main(bag=0, 
         start_idx=0,
-        plain=False,
         data_dir = 'data/v2-92-z_o_5-pgd_3_smooth-asr45/tokens/sri/py150/gradient-targeting/test.tsv',
         randomly_pick = False,
         bag_size = 500,
         file_name = 'gpt-4_result/gpt4',
         new_sample = True,
-        use_GPT = 4, 
+        use_GPT = 'gpt4', 
+        meta_d = False
         ):
     if new_sample:
         index_r,src_r,tgt_r,adv_r,tgt_dict = read_file(data_dir,randomly_pick,bag=bag,dict_size=bag_size)
@@ -301,8 +260,6 @@ def main(bag=0,
         writer = csv.writer(f)
         
         # run GPT
-        if plain:
-            chatbot = ChatGPT_plain()
         chatbot = ChatGPT()
         for i in range(216):
             if i < start_idx:
@@ -310,11 +267,10 @@ def main(bag=0,
             elif i == 0 and bag == 0:
                 save_dict(file_name,tgt_dict)
             print('-------- index ',index_r[i],' ---------')
-            if not plain:
-                response = run_GPT_dif_cases(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,prompt,prompt_w_d,temperature=0,use_GPT=use_GPT)
-            else:
-                response = run_GPT_plain(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,temperature=0,use_GPT=use_GPT)
-            
+            if meta_d:
+                response = run_GPT_meta_d(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,temperature=0,use_GPT=use_GPT)
+            else: 
+                response = run_GPT_dif_cases(chatbot,src_r[i],adv_r[i],tgt_r[i],tgt_dict,temperature=0,use_GPT=use_GPT)
 
             response = (str(index_r[i]),) + response
             formatted_response = ', '.join(map(str, response)) + '\n'
@@ -329,10 +285,10 @@ if __name__ == '__main__':
     parser.add_argument('--bag', type=int, default=0, help='bag')
     parser.add_argument('--i', type=int, default=0, help='start index')
     parser.add_argument('--plain', type=bool, default=False, help='add strategy to emprove accuracy such as dictionary, few-shot prompt') 
-    parser.add_argument('--data_dir', type=str, default='/data/v2-92-z_o_5-pgd_3_smooth-asr45/tokens/sri/py150/gradient-targeting/test.tsv', help='data directory')
+    parser.add_argument('--data_dir', type=str, default='data/data.tsv', help='data directory')
     parser.add_argument('--randomly_pick', type=bool, default=False, help='randomly pick data from src')
     parser.add_argument('--bag_size', type=int, default=500, help='bag size')
-    parser.add_argument('--file_name', type=str, default='/gpt-4_result/gpt4', help='result file name')
+    parser.add_argument('--file_name', type=str, default='gpt4', help='result file name')
     parser.add_argument('--new_sample', type=bool, default=True, help='new sample or read from the result directory')
     parser.add_argument('--use_GPT', type=int, default=35, help='use GPT 4 or 3.5')
 
@@ -340,7 +296,6 @@ if __name__ == '__main__':
 
     main(bag=args.bag, 
         start_idx=args.i,
-        plain=args.plain,
         data_dir = args.data_dir,
         randomly_pick = args.randomly_pick,
         bag_size = args.bag_size,
