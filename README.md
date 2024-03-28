@@ -21,6 +21,7 @@ This file contains the results of each LLM. The results of Meta-Prompts are in f
 ### `run.py`
 
 The entry point of running the whole experiment thoroughly. Run with `python3 run.py --file_name {filename} --data_dir {datadir} --use_GPT {the LLM to use}`
+Models should be one of the following:`{"gpt35", "gpt4", "codeLlama", "Claude1", "Claude2"}`
 
 ### `run_GPT.py`
 The main file of the experiment. 
