@@ -9,6 +9,10 @@ This repository contains the dataset and code used in our paper on evaluating th
 ```bash
 pip install openai==0.28
 ```
+3. run the experiment through: 
+```bash
+python3 run.py --file_name={filename} --data_dir={datadir} --use_GPT={the_LLM_to_use}
+```
 
 ## Repository Structure
 
