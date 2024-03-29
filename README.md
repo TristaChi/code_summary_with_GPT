@@ -1,6 +1,14 @@
-# code_summary_with_GPT
+# Transfer Attacks and Defenses for Large Language Models on Coding Tasks
 
 This repository contains the dataset and code used in our paper on evaluating the robustness of Large Language Models (LLMs) against adversarially perturbed inputs. It provides a framework for running experiments to test LLMs' results on code summarization tasks to both original and perturbed inputs. 
+
+## Usage
+
+1. Clone the repository.
+2. Install the `openAI` package using the following command:
+```bash
+pip install openai==0.28
+```
 
 ## Repository Structure
 
@@ -20,7 +28,7 @@ This file contains the results of each LLM. The results of Meta-Prompts are in f
 
 ### `run.py`
 
-The entry point of running the whole experiment thoroughly. Run with `python3 run.py --file_name {filename} --data_dir {datadir} --use_GPT {the LLM to use}`
+The entry point of running the whole experiment thoroughly. Run with `python3 run.py --file_name={filename} --data_dir={datadir} --use_GPT={the LLM to use}`
 Models should be one of the following:`{"gpt35", "gpt4", "codeLlama", "Claude1", "Claude2"}`
 
 ### `run_GPT.py`

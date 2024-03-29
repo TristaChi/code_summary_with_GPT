@@ -1,6 +1,6 @@
 {
     "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "off",
     "typescript.tsserver.maxTsServerMemory": 3072,
     "typescript.tsserver.watchOptions": {
         "watchFile": "dynamicPriorityPolling"
