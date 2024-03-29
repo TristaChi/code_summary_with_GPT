@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse 
+
 def get_list(i0=None, i1=None, i2=None, i3=None, i4=None, i5=None, i6=None, i7=None,
             i8=None,i9=None, i10=None, i11=None, i12=None, i13=None, i14=None, i15=None, i16=None,i17=None):
     return [i0,i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,i17]
@@ -77,10 +79,7 @@ def plot(data, labels, title, name='src&adv'):
     # Display the pie chart
     plt.show()
 
-if __name__ == '__main__':
-
-    csv_file_path = 'path_to_result_file'
-
+def main(csv_file_path):
     bool_data, idk_data = get_data(file=csv_file_path,ignore_first_line=False)
 
     print('src	adv	src_w_fsd_response	adv_w_fsd_response	src_w_pd_response	adv_w_pd_response')
@@ -100,4 +99,10 @@ if __name__ == '__main__':
     print(count_idk(get_list(i14=True), bool_data, idk_data))
     print(count_match(get_list(i1=True,i14=True),bool_data))
 
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()  
+    parser.add_argument('--file', type=str, default='result/gpt4.csv', help='path to result file')
+    args = parser.parse_args()
 
+    csv_file_path = args.file
+    main(csv_file_path)

@@ -1,11 +1,8 @@
 from myGPT import ChatGPT
 import csv
 import numpy as np
-import re
 import json
 import argparse 
-import time
-from myGPT_plain import ChatGPT_plain
 from prompt import *
 
 def get_data(index,src,tgt,adv,dict_size,random_pick=False,bag=1,picked=[]):

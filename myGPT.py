@@ -5,6 +5,13 @@ import json
 
 openai.api_key = '[your openai key]'
 
+models = {
+    "gpt35": "gpt-3.5-turbo",
+    "gpt4": "gpt-4-0613",
+    "codeLlama": "Codellama-7B-Instruct",
+    "Claude2": "claude-2.1",
+    "Claude1": "claude-instant-1.2"
+}
 class ChatGPT():
     def __init__(self) -> None:
         self.few_shot_src_examples = [
@@ -29,9 +36,12 @@ class ChatGPT():
         ]
 
 
-    def __call__(self, input_msg, dict, defense=True,use_GPT=35, single_example=False,model = "gpt-4-0613", **kwargs):
-        if use_GPT == 35:
-            model = "gpt-3.5-turbo"
+    def __call__(self, input_msg, dict, defense=True,use_GPT='gpt4', single_example=False, **kwargs):
+
+        if use_GPT in models:
+            model = models[use_GPT]
+        else:
+            model = "Model not found."
         sys_msg = "the possible output should be one of the following dictionary: "+str(dict)
         msg = [
             {"role": "system", "content": "act as a code summarization model that only outputs one word"},

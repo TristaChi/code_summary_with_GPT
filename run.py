@@ -6,9 +6,6 @@ import threading
 from threading import Thread
 import argparse 
 
-
-
-
 def rerun_program(stop_event,file_name,data_dir,use_GPT):
     try:
         with open(file_name, 'r') as f:
@@ -43,7 +40,7 @@ def main(file_name, data_dir, use_GPT):
             f.write('index, src_response, adv_response, src_w_fsd_response, adv_w_fsd_response, src_w_pd_response, adv_w_pd_response, src_w_d_response, adv_w_d_response, src_idk_response, adv_idk_response, src_w_fsd_idk_response, adv_w_fsd_idk_response, src_w_pd_idk_response, adv_w_pd_idk_response, src_w_d_idk_response, adv_w_d_idk_response, tgt \n')
     stop_event = threading.Event()
     while True:
-        with open(file_name, 'r') as f:
+        with open(file_name+'.csv', 'r') as f:
             line_count = sum(1 for _ in f)
             print('line count:', line_count)
         
@@ -70,9 +67,9 @@ def main(file_name, data_dir, use_GPT):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser() 
-    parser.add_argument('--file_name', type=str, default='/gpt-4_result/gpt4', help='result file name')
-    parser.add_argument('--data_dir', type=str, default='data/data.tsv', help='directoin to data')
-    parser.add_argument('--use_GPT', type=str, default='gpt4', help='use GPT 4 or 3.5')
+    parser.add_argument('--file_name', type=str, default='result/gpt4', help='result file name')
+    parser.add_argument('--data_dir', type=str, default='data/data.tsv', help='directory to data')
+    parser.add_argument('--use_GPT', type=str, default='gpt35', help='use GPT 4 or 3.5')
 
     args = parser.parse_args()
     main(file_name=args.file_name, data_dir=args.data_dir, use_GPT=args.use_GPT)
